@@ -1,0 +1,986 @@
+{
+  "id" : 1,
+  "name" : "LoRaWAN Primer",
+  "description" : "Quick-Start and Shared Reference Content for LoRaWANers",
+  "lastModifiedDate" : "2024-02-16T15:17:56Z",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJMb1JhV0FOIFByaW1lciIgIlF1aWNrLVN0YXJ0IGFuZCBTaGFyZWQgUmVmZXJlbmNlIENvbnRlbnQgZm9yIExvUmFXQU5lcnMiIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCiAgICAhZG9jcyBkb2NzCiAgICAKICAgIG1vZGVsIHsKCiAgICAgICAgZGV2aWNlID0gc29mdHdhcmVTeXN0ZW0gIkxvUmFXQU4gRGV2aWNlIiAiYSBkZXZpY2UgaW4gdGhlIHdvcmxkIiBkZXZ0YWcgewogICAgICAgICAgICBzZW5zb3JzID0gY29udGFpbmVyICJQaHlzaWNhbCBTZW5zb3JzIiAiZ2V0IGRhdGEiICJoYXJkd2FyZSIgc2Vuc29yc3RhZwogICAgICAgICAgICBtY3UgPSBjb250YWluZXIgIk1pY3JvQ29udHJvbFVuaXQiICJvcGVyYXRlIGRldmljZSIgImhhcmR3YXJlIiBtY3V0YWcgewogICAgICAgICAgICAgICAgc2Vuc29ycyAtPiB0aGlzIHRlbGVtZXRyeQogICAgICAgICAgICB9CiAgICAgICAgICAgIG1vZGVtID0gY29udGFpbmVyICJNb2RlbSIgImNvbW11bmljYXRlIiAiaGFyZHdhcmUiIG1vZGVtdGFnIHsKICAgICAgICAgICAgICAgIG1jdSAtPiB0aGlzIGNvbW0tb3V0CiAgICAgICAgICAgICAgICB0aGlzIC0+IG1jdSBjb21tLWluCiAgICAgICAgICAgIH0KICAgICAgICAgICAgcmFkaW8gPSBjb250YWluZXIgIlJhZGlvIiAiUkYiICJjaGlwIiByYWRpb3RhZyB7CiAgICAgICAgICAgICAgICBtb2RlbSAtPiB0aGlzIG91dAogICAgICAgICAgICAgICAgdGhpcyAtPiBtb2RlbSBpbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGFudGVubmEgPSBjb250YWluZXIgIkFudGVubmEiICIiICJoYXJkd2FyZSIgYW50ZW5uYXRhZyB7CiAgICAgICAgICAgICAgICByYWRpbyAtPiB0aGlzIG91dAogICAgICAgICAgICAgICAgdGhpcyAtPiByYWRpbyBpbgogICAgICAgICAgICB9CiAgICAgICAgICAgIHBvd2VyID0gY29udGFpbmVyICJwb3dlciIgIiIgImhhcmR3YXJlIiBwb3dlcnRhZwogICAgICAgIH0KCiAgICAgICAgZ2F0ZXdheSA9IHNvZnR3YXJlU3lzdGVtICJMb1JhV0FOIEdhdGV3YXkiICJSRiBDb3ZlcmFnZSIgZ3d0YWcgewogICAgICAgICAgICBiYWNraGF1bCA9IGNvbnRhaW5lciAiQmFja2hhdWwiICJJUCB0byBOZXR3b3JrIFNlcnZlciIgImludGVybmV0IiBiYWNraGF1bHRhZyAgIAogICAgICAgICAgICBwa3Rmd2QgPSBjb250YWluZXIgIlBhY2tldCBGb3J3YXJkZXIiICJSRiB0byBJUCIgImRhZW1vbiIgcGt0ZndkdGFnIHsKICAgICAgICAgICAgICAgIC0+IGJhY2toYXVsIGludGVybmV0IGNlbGx1bGFyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY3B1ID0gY29udGFpbmVyICJDUFUiICJnYXRld2F5IiAiaGFyZHdhcmUiIGNwdXRhZyB7CiAgICAgICAgICAgICAgICAtPiBwa3Rmd2QgY29udHJvbAogICAgICAgICAgICB9CgogICAgICAgICAgICBncHMgPSBjb250YWluZXIgIkdQUyIgIkdlb2xvY2F0aW9uIiAiIiBncHN0YWcgewogICAgICAgICAgICAgICAgY3B1IC0+IHRoaXMKICAgICAgICAgICAgfQogICAgICAgICAgICBtb2RlbSA9IGNvbnRhaW5lciAiTW9kZW0iICJjb21tdW5pY2F0ZSIgImhhcmR3YXJlIiBtb2RlbXRhZyB7CiAgICAgICAgICAgICAgICBwa3Rmd2QgLT4gdGhpcyBkb3dubGlua3MKICAgICAgICAgICAgICAgIHRoaXMgLT4gcGt0ZndkIHVwbGlua3MKICAgICAgICAgICAgfQogICAgICAgICAgICByYWRpbyA9IGNvbnRhaW5lciAiUmFkaW8iICJSRiIgImNoaXAiIHJhZGlvdGFnIHsKICAgICAgICAgICAgICAgIG1vZGVtIC0+IHRoaXMgb3V0CiAgICAgICAgICAgICAgICB0aGlzIC0+IG1vZGVtIGluCiAgICAgICAgICAgIH0KICAgICAgICAgICAgYW50ZW5uYSA9IGNvbnRhaW5lciAiQW50ZW5uYSIgIiIgImhhcmR3YXJlIiBhbnRlbm5hdGFnIHsKICAgICAgICAgICAgICAgIHJhZGlvIC0+IHRoaXMgb3V0CiAgICAgICAgICAgICAgICB0aGlzIC0+IHJhZGlvIGluCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHBvd2VyID0gY29udGFpbmVyICJwb3dlciIgImdhdGV3YXkgcG93ZXIiICJoYXJkd2FyZSIgcG93ZXJ0YWcKICAgICAgICB9CgogICAgICAgIG5ldHdvcmtzZXJ2ZXIgPSBzb2Z0d2FyZVN5c3RlbSAiTmV0d29yayBTZXJ2ZXIiICJMb1JhV0FOIE5TIiBuc3RhZyB7CiAgICAgICAgICAgIHBrdC1icmlkZ2UgPSBjb250YWluZXIgIlBhY2tldCBCcmlkZ2UiICJJUCB0byBSRiIgImRhZW1vbiIgcGt0YnJpZGdldGFnCiAgICAgICAgICAgIGRlZHVwID0gY29udGFpbmVyICJEZUR1cCIgIkxvUmFXQU4gTlMiICJzb2Z0d2FyZSIgZGVkdXB0YWcgICAgIAogICAgICAgICAgICBqb2luID0gY29udGFpbmVyICJKb2luIiAiTG9SYVdBTiBOUyIgInNvZnR3YXJlIiBqb2ludGFnCiAgICAgICAgICAgIGludGVncmF0aW9ucyA9IGNvbnRhaW5lciAiaW50ZWdyYXRpb25zIiAiTG9SYVdBTiBOUyIgInNvZnR3YXJlIiBmd2R0YWcKICAgICAgICAgICAgYWRyID0gY29udGFpbmVyICJBRFIiICJMb1JhV0FOIE5TIiAic29mdHdhcmUiIGFkcnRhZwogICAgICAgIH0KCiAgICAgICAgYXBwbGljYXRpb25zZXJ2ZXIgPSBzb2Z0d2FyZVN5c3RlbSAiQXBwbGljYXRpb24gU2VydmVyIiAiZGF0YS9jb250cm9sIiBhc3RhZwogICAgICAgIAogICAgICAgIGRldmljZS5hbnRlbm5hIC0+IGdhdGV3YXkuYW50ZW5uYSB1cGxpbmtzIFJGIHVwbGluawogICAgICAgIGRldmljZS5tY3UgLT4gbmV0d29ya3NlcnZlci5kZWR1cCAiTG9SYVdBTlxuTUFDIiB1cGxpbmsvZG93bmxpbmsgbG9naWNhbAogICAgICAgIGRldmljZS5tY3UgLT4gYXBwbGljYXRpb25zZXJ2ZXIgcmVwb3J0cyB1cGxpbmsgbG9naWNhbAogICAgICAgIGdhdGV3YXkgLT4gbmV0d29ya3NlcnZlciB1cGxpbmtzIHBrdC1md2QgdXBsaW5rCiAgICAgICAgbmV0d29ya3NlcnZlciAtPiBhcHBsaWNhdGlvbnNlcnZlciB1cGxpbmtzIGh0dHAgdXBsaW5rCiAgICAgICAgYXBwbGljYXRpb25zZXJ2ZXIgLT4gbmV0d29ya3NlcnZlciBkb3dubGluayBodHRwIGRvd25saW5rCiAgICAgICAgbmV0d29ya3NlcnZlciAtPiBnYXRld2F5IGRvd25saW5rIHBrdC1md2QgZG93bmxpbmsKICAgICAgICBnYXRld2F5LmFudGVubmEgLT4gZGV2aWNlLmFudGVubmEgZG93bmxpbmtzIFJGIGRvd25saW5rCiAgICAgICAgYXBwbGljYXRpb25zZXJ2ZXIgLT4gZGV2aWNlLm1jdSBjb250cm9sIGRvd25saW5rIGxvZ2ljYWwKICAgIH0KCiAgICB2aWV3cyB7CiAgICAKICAgICAgICBzeXN0ZW1Db250ZXh0IGRldmljZSBMb1JhV0FOICJMb3JhV2FuIFBhY2tldCBGbG93IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KICAgICAgICAKICAgICAgICBjb250YWluZXIgZGV2aWNlIGRldmljZV9DT05UQUlORVJTICJMb3JhV2FuIERldmljZSIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgY29udGFpbmVyIGdhdGV3YXkgZ2F0ZXdheV9DT05UQUlORVJTICJMb3JhV2FuIEdhdGV3YXkiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICByZWxhdGlvbnNoaXAgdXBsaW5rIHsKICAgICAgICAgICAgICAgIGNvbG9yIExpbWVHcmVlbgogICAgICAgICAgICAgICAgZGFzaGVkIGZhbHNlCiAgICAgICAgICAgICAgICB0aGlja25lc3MgNAogICAgICAgICAgICB9CiAgICAgICAgICAgIHJlbGF0aW9uc2hpcCBkb3dubGluayB7CiAgICAgICAgICAgICAgICBjb2xvciByZWQKICAgICAgICAgICAgICAgIGRhc2hlZCBmYWxzZQogICAgICAgICAgICAgICAgdGhpY2tuZXNzIDQKICAgICAgICAgICAgfQogICAgICAgICAgICByZWxhdGlvbnNoaXAgbG9naWNhbCB7ICAKICAgICAgICAgICAgICAgIGNvbG9yIGJsdWUKICAgICAgICAgICAgICAgIGRhc2hlZCB0cnVlCiAgICAgICAgICAgICAgICB0aGlja25lc3MgNAogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgZGV2dGFnIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgZ3JlZW4KICAgICAgICAgICAgICAgIGNvbG9yIHdoaXRlCiAgICAgICAgICAgICAgICBmb250U2l6ZSAyNAogICAgICAgICAgICAgICAgc2hhcGUgSGV4YWdvbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgZ3d0YWcgewogICAgICAgICAgICAgICAgLy8gcGVyaXdpbmtsZQogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjQ0NDQ0ZGCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgICAgICBmb250U2l6ZSAyNAogICAgICAgICAgICAgICAgc2hhcGUgUGlwZQogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL3Rvd2VyLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgbnN0YWcgewogICAgICAgICAgICAgICAgLy8gd2lzdGVyaWEKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0JEQjVENQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICAgICAgZm9udFNpemUgMjQKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBhc3RhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kIGRhcmtvbGl2ZWdyZWVuCiAgICAgICAgICAgICAgICBjb2xvciB3aGl0ZQogICAgICAgICAgICAgICAgZm9udFNpemUgMjQKICAgICAgICAgICAgICAgIHNoYXBlIFJvdW5kZWRCb3gKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50IHNlbnNvcnN0YWcgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCBncmVlbgogICAgICAgICAgICAgICAgY29sb3Igd2hpdGUKICAgICAgICAgICAgICAgIGZvbnRTaXplIDI0CiAgICAgICAgICAgICAgICBzaGFwZSBIZXhhZ29uCiAgICAgICAgICAgICAgICAjIGljb24gZG9jcy9pbWFnZXMvdGhlcm0xMDAuanBnCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBhbnRlbm5hdGFnIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0RBNzBENgogICAgICAgICAgICAgICAgY29sb3IgYmxhY2sKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL2FudGVubmEucG5nCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCByYWRpb3RhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kIHZpb2xldAogICAgICAgICAgICAgICAgY29sb3IgYmxhY2sKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL2FudGVubmEucG5nCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBtb2RlbXRhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICAjRTBCMEZGCiAgICAgICAgICAgICAgICBjb2xvciBibGFjawogICAgICAgICAgICAgICAgc2hhcGUgQ29tcG9uZW50CiAgICAgICAgICAgICAgICAjIGljb24gZG9jcy9pbWFnZXMvYW50ZW5uYS5wbmcKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50IGNwdXRhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kIExpZ2h0R3JlZW4KICAgICAgICAgICAgICAgIGNvbG9yIGJsYWNrCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgcG93ZXJ0YWcgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCBJbmRpYW5SZWQKICAgICAgICAgICAgICAgIGNvbG9yIHdoaXRlCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgZ3BzdGFnIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgU2t5Qmx1ZQogICAgICAgICAgICAgICAgY29sb3IgYmxhY2sKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL2FudGVubmEucG5nCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBwa3Rmd2R0YWcgewogICAgICAgICAgICAgICAgIyBiYWNrZ3JvdW5kICNERjczRkYKICAgICAgICAgICAgICAgIGNvbG9yIHdoaXRlCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgYmFja2hhdWx0YWcgewogICAgICAgICAgICAgICAgIyBiYWNrZ3JvdW5kICM0RTJBODQKICAgICAgICAgICAgICAgIGNvbG9yIHdoaXRlCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "softwareSystems" : [ {
+      "id" : "1",
+      "tags" : "Element,Software System,devtag",
+      "properties" : {
+        "structurizr.dsl.identifier" : "device"
+      },
+      "name" : "LoRaWAN Device",
+      "description" : "a device in the world",
+      "relationships" : [ {
+        "id" : "42",
+        "sourceId" : "1",
+        "destinationId" : "29",
+        "description" : "uplinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "40"
+      }, {
+        "id" : "43",
+        "sourceId" : "1",
+        "destinationId" : "15",
+        "description" : "uplinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "40"
+      }, {
+        "id" : "46",
+        "sourceId" : "1",
+        "destinationId" : "35",
+        "description" : "LoRaWAN\nMAC",
+        "technology" : "uplink/downlink",
+        "linkedRelationshipId" : "44"
+      }, {
+        "id" : "47",
+        "sourceId" : "1",
+        "destinationId" : "33",
+        "description" : "LoRaWAN\nMAC",
+        "technology" : "uplink/downlink",
+        "linkedRelationshipId" : "44"
+      }, {
+        "id" : "49",
+        "sourceId" : "1",
+        "destinationId" : "39",
+        "description" : "reports",
+        "technology" : "uplink",
+        "linkedRelationshipId" : "48"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "5",
+        "tags" : "Element,Container,modemtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.modem"
+        },
+        "name" : "Modem",
+        "description" : "communicate",
+        "relationships" : [ {
+          "id" : "7",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "cbe9273a-05cb-466c-8db1-4cc7cf7fe675"
+          },
+          "sourceId" : "5",
+          "destinationId" : "3",
+          "description" : "comm-in"
+        }, {
+          "id" : "9",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "1287d40f-490a-4aaa-9f67-f80b316f4cfb"
+          },
+          "sourceId" : "5",
+          "destinationId" : "8",
+          "description" : "out"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "11",
+        "tags" : "Element,Container,antennatag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.antenna"
+        },
+        "name" : "Antenna",
+        "relationships" : [ {
+          "id" : "13",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "05e6778d-6407-4292-9be1-93b1adf4fee8"
+          },
+          "sourceId" : "11",
+          "destinationId" : "8",
+          "description" : "in"
+        }, {
+          "id" : "40",
+          "tags" : "Relationship,uplink",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e1fda88c-541b-4d34-a9a2-b975b09352f8"
+          },
+          "sourceId" : "11",
+          "destinationId" : "29",
+          "description" : "uplinks",
+          "technology" : "RF"
+        }, {
+          "id" : "41",
+          "sourceId" : "11",
+          "destinationId" : "15",
+          "description" : "uplinks",
+          "technology" : "RF",
+          "linkedRelationshipId" : "40"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "8",
+        "tags" : "Element,Container,radiotag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.radio"
+        },
+        "name" : "Radio",
+        "description" : "RF",
+        "relationships" : [ {
+          "id" : "10",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "93b9208c-9833-4519-83ee-68318cea197e"
+          },
+          "sourceId" : "8",
+          "destinationId" : "5",
+          "description" : "in"
+        }, {
+          "id" : "12",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8bf4316a-516a-4972-bc0f-0863b093495c"
+          },
+          "sourceId" : "8",
+          "destinationId" : "11",
+          "description" : "out"
+        } ],
+        "technology" : "chip",
+        "documentation" : { }
+      }, {
+        "id" : "3",
+        "tags" : "Element,Container,mcutag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.mcu"
+        },
+        "name" : "MicroControlUnit",
+        "description" : "operate device",
+        "relationships" : [ {
+          "id" : "6",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e56852e6-bbc4-4f07-9ab8-3cf03dc8582b"
+          },
+          "sourceId" : "3",
+          "destinationId" : "5",
+          "description" : "comm-out"
+        }, {
+          "id" : "44",
+          "tags" : "Relationship,logical",
+          "properties" : {
+            "structurizr.dsl.identifier" : "4e2d58e9-498c-445a-9a72-8cc09262f14d"
+          },
+          "sourceId" : "3",
+          "destinationId" : "35",
+          "description" : "LoRaWAN\nMAC",
+          "technology" : "uplink/downlink"
+        }, {
+          "id" : "45",
+          "sourceId" : "3",
+          "destinationId" : "33",
+          "description" : "LoRaWAN\nMAC",
+          "technology" : "uplink/downlink",
+          "linkedRelationshipId" : "44"
+        }, {
+          "id" : "48",
+          "tags" : "Relationship,logical",
+          "properties" : {
+            "structurizr.dsl.identifier" : "78bb563f-ff1b-40fc-93f0-058b92ef0dd9"
+          },
+          "sourceId" : "3",
+          "destinationId" : "39",
+          "description" : "reports",
+          "technology" : "uplink"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "2",
+        "tags" : "Element,Container,sensorstag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.sensors"
+        },
+        "name" : "Physical Sensors",
+        "description" : "get data",
+        "relationships" : [ {
+          "id" : "4",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "fefd3cce-27b0-44c3-9031-714555ff455a"
+          },
+          "sourceId" : "2",
+          "destinationId" : "3",
+          "description" : "telemetry"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "14",
+        "tags" : "Element,Container,powertag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.power"
+        },
+        "name" : "power",
+        "technology" : "hardware",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "15",
+      "tags" : "Element,Software System,gwtag",
+      "properties" : {
+        "structurizr.dsl.identifier" : "gateway"
+      },
+      "name" : "LoRaWAN Gateway",
+      "description" : "RF Coverage",
+      "relationships" : [ {
+        "id" : "50",
+        "tags" : "Relationship,uplink",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a7ad3d24-7b66-4fb3-b552-e624484ee28c"
+        },
+        "sourceId" : "15",
+        "destinationId" : "33",
+        "description" : "uplinks",
+        "technology" : "pkt-fwd"
+      }, {
+        "id" : "56",
+        "sourceId" : "15",
+        "destinationId" : "11",
+        "description" : "downlinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "54"
+      }, {
+        "id" : "57",
+        "sourceId" : "15",
+        "destinationId" : "1",
+        "description" : "downlinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "54"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "19",
+        "tags" : "Element,Container,cputag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.cpu"
+        },
+        "name" : "CPU",
+        "description" : "gateway",
+        "relationships" : [ {
+          "id" : "20",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "efaeaa45-a4f2-46df-9a3a-557f5eac2503"
+          },
+          "sourceId" : "19",
+          "destinationId" : "17",
+          "description" : "control"
+        }, {
+          "id" : "22",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8ec32d83-5f63-4a4b-9caa-a7e1e059390a"
+          },
+          "sourceId" : "19",
+          "destinationId" : "21"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "17",
+        "tags" : "Element,Container,pktfwdtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.pktfwd"
+        },
+        "name" : "Packet Forwarder",
+        "description" : "RF to IP",
+        "relationships" : [ {
+          "id" : "18",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "47e48595-2da8-45f1-b131-b47e0a3a27fe"
+          },
+          "sourceId" : "17",
+          "destinationId" : "16",
+          "description" : "internet",
+          "technology" : "cellular"
+        }, {
+          "id" : "24",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "574241be-9017-4399-8ca5-5bef51dc7be2"
+          },
+          "sourceId" : "17",
+          "destinationId" : "23",
+          "description" : "downlinks"
+        } ],
+        "technology" : "daemon",
+        "documentation" : { }
+      }, {
+        "id" : "21",
+        "tags" : "Element,Container,gpstag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.gps"
+        },
+        "name" : "GPS",
+        "description" : "Geolocation",
+        "documentation" : { }
+      }, {
+        "id" : "29",
+        "tags" : "Element,Container,antennatag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.antenna"
+        },
+        "name" : "Antenna",
+        "relationships" : [ {
+          "id" : "31",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "24177ffe-fd1e-4e20-a828-26740e8930b8"
+          },
+          "sourceId" : "29",
+          "destinationId" : "26",
+          "description" : "in"
+        }, {
+          "id" : "54",
+          "tags" : "Relationship,downlink",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a2237f21-7c45-4cbd-912f-fc1a55772449"
+          },
+          "sourceId" : "29",
+          "destinationId" : "11",
+          "description" : "downlinks",
+          "technology" : "RF"
+        }, {
+          "id" : "55",
+          "sourceId" : "29",
+          "destinationId" : "1",
+          "description" : "downlinks",
+          "technology" : "RF",
+          "linkedRelationshipId" : "54"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "26",
+        "tags" : "Element,Container,radiotag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.radio"
+        },
+        "name" : "Radio",
+        "description" : "RF",
+        "relationships" : [ {
+          "id" : "28",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6d343e50-64f2-4722-b635-1cd2ece355ee"
+          },
+          "sourceId" : "26",
+          "destinationId" : "23",
+          "description" : "in"
+        }, {
+          "id" : "30",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "74c1c882-77ce-4650-90f1-b9523e8e0726"
+          },
+          "sourceId" : "26",
+          "destinationId" : "29",
+          "description" : "out"
+        } ],
+        "technology" : "chip",
+        "documentation" : { }
+      }, {
+        "id" : "32",
+        "tags" : "Element,Container,powertag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.power"
+        },
+        "name" : "power",
+        "description" : "gateway power",
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "16",
+        "tags" : "Element,Container,backhaultag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.backhaul"
+        },
+        "name" : "Backhaul",
+        "description" : "IP to Network Server",
+        "technology" : "internet",
+        "documentation" : { }
+      }, {
+        "id" : "23",
+        "tags" : "Element,Container,modemtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.modem"
+        },
+        "name" : "Modem",
+        "description" : "communicate",
+        "relationships" : [ {
+          "id" : "25",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c3a93c1f-9573-44f2-8eb9-c414c6c40ac0"
+          },
+          "sourceId" : "23",
+          "destinationId" : "17",
+          "description" : "uplinks"
+        }, {
+          "id" : "27",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "7b5a01c2-5a8a-498d-ad7b-e6fed2ab3ba8"
+          },
+          "sourceId" : "23",
+          "destinationId" : "26",
+          "description" : "out"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "33",
+      "tags" : "Element,Software System,nstag",
+      "properties" : {
+        "structurizr.dsl.identifier" : "networkserver"
+      },
+      "name" : "Network Server",
+      "description" : "LoRaWAN NS",
+      "relationships" : [ {
+        "id" : "51",
+        "tags" : "Relationship,uplink",
+        "properties" : {
+          "structurizr.dsl.identifier" : "523fb0fd-60c0-4f45-8a35-68941e9b8445"
+        },
+        "sourceId" : "33",
+        "destinationId" : "39",
+        "description" : "uplinks",
+        "technology" : "http"
+      }, {
+        "id" : "53",
+        "tags" : "Relationship,downlink",
+        "properties" : {
+          "structurizr.dsl.identifier" : "f33ceb22-d127-498b-8338-ba5d61cbddde"
+        },
+        "sourceId" : "33",
+        "destinationId" : "15",
+        "description" : "downlink",
+        "technology" : "pkt-fwd"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "36",
+        "tags" : "Element,Container,jointag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.join"
+        },
+        "name" : "Join",
+        "description" : "LoRaWAN NS",
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "35",
+        "tags" : "Element,Container,deduptag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.dedup"
+        },
+        "name" : "DeDup",
+        "description" : "LoRaWAN NS",
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "38",
+        "tags" : "Element,Container,adrtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.adr"
+        },
+        "name" : "ADR",
+        "description" : "LoRaWAN NS",
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "34",
+        "tags" : "Element,Container,pktbridgetag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.pkt-bridge"
+        },
+        "name" : "Packet Bridge",
+        "description" : "IP to RF",
+        "technology" : "daemon",
+        "documentation" : { }
+      }, {
+        "id" : "37",
+        "tags" : "Element,Container,fwdtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.integrations"
+        },
+        "name" : "integrations",
+        "description" : "LoRaWAN NS",
+        "technology" : "software",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    }, {
+      "id" : "39",
+      "tags" : "Element,Software System,astag",
+      "properties" : {
+        "structurizr.dsl.identifier" : "applicationserver"
+      },
+      "name" : "Application Server",
+      "description" : "data/control",
+      "relationships" : [ {
+        "id" : "52",
+        "tags" : "Relationship,downlink",
+        "properties" : {
+          "structurizr.dsl.identifier" : "40bf5fb4-417e-4ed7-85b7-7aba251d5266"
+        },
+        "sourceId" : "39",
+        "destinationId" : "33",
+        "description" : "downlink",
+        "technology" : "http"
+      }, {
+        "id" : "58",
+        "tags" : "Relationship,logical",
+        "properties" : {
+          "structurizr.dsl.identifier" : "3d0112e5-1ffe-4521-b265-cf3e6c500a16"
+        },
+        "sourceId" : "39",
+        "destinationId" : "3",
+        "description" : "control",
+        "technology" : "downlink"
+      }, {
+        "id" : "59",
+        "sourceId" : "39",
+        "destinationId" : "1",
+        "description" : "control",
+        "technology" : "downlink",
+        "linkedRelationshipId" : "58"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "LoRaWAN",
+      "order" : 1,
+      "description" : "LoraWan Packet Flow",
+      "softwareSystemId" : "1",
+      "dimensions" : {
+        "width" : 1975,
+        "height" : 1479
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "33",
+        "x" : 1325,
+        "y" : 220
+      }, {
+        "id" : "1",
+        "x" : 210,
+        "y" : 890
+      }, {
+        "id" : "15",
+        "x" : 200,
+        "y" : 200
+      }, {
+        "id" : "39",
+        "x" : 1295,
+        "y" : 955
+      } ],
+      "relationships" : [ {
+        "id" : "50",
+        "vertices" : [ {
+          "x" : 990,
+          "y" : 315
+        } ]
+      }, {
+        "id" : "51",
+        "vertices" : [ {
+          "x" : 1615,
+          "y" : 785
+        } ]
+      }, {
+        "id" : "52",
+        "vertices" : [ {
+          "x" : 1490,
+          "y" : 750
+        } ]
+      }, {
+        "id" : "53",
+        "vertices" : [ {
+          "x" : 985,
+          "y" : 425
+        } ]
+      }, {
+        "id" : "43",
+        "vertices" : [ {
+          "x" : 365,
+          "y" : 720
+        } ]
+      }, {
+        "id" : "57",
+        "vertices" : [ {
+          "x" : 505,
+          "y" : 715
+        } ]
+      }, {
+        "id" : "47"
+      }, {
+        "id" : "59",
+        "vertices" : [ {
+          "x" : 965,
+          "y" : 1165
+        } ]
+      }, {
+        "id" : "49",
+        "vertices" : [ {
+          "x" : 970,
+          "y" : 1025
+        } ]
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "gateway_CONTAINERS",
+      "order" : 3,
+      "description" : "LoraWan Gateway",
+      "softwareSystemId" : "15",
+      "dimensions" : {
+        "width" : 2215,
+        "height" : 2354
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 481,
+        "y" : 1765
+      }, {
+        "id" : "23",
+        "x" : 220,
+        "y" : 230
+      }, {
+        "id" : "26",
+        "x" : 245,
+        "y" : 695
+      }, {
+        "id" : "16",
+        "x" : 1541,
+        "y" : 220
+      }, {
+        "id" : "17",
+        "x" : 916,
+        "y" : 220
+      }, {
+        "id" : "29",
+        "x" : 260,
+        "y" : 1195
+      }, {
+        "id" : "19",
+        "x" : 920,
+        "y" : 710
+      }, {
+        "id" : "21",
+        "x" : 920,
+        "y" : 1170
+      }, {
+        "id" : "32",
+        "x" : 1545,
+        "y" : 710
+      } ],
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "28",
+        "vertices" : [ {
+          "x" : 505,
+          "y" : 620
+        } ]
+      }, {
+        "id" : "27",
+        "vertices" : [ {
+          "x" : 415,
+          "y" : 625
+        } ]
+      }, {
+        "id" : "25",
+        "vertices" : [ {
+          "x" : 790,
+          "y" : 495
+        } ]
+      }, {
+        "id" : "24",
+        "vertices" : [ {
+          "x" : 795,
+          "y" : 335
+        } ]
+      }, {
+        "id" : "42",
+        "vertices" : [ {
+          "x" : 680,
+          "y" : 1630
+        } ]
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "55",
+        "vertices" : [ {
+          "x" : 510,
+          "y" : 1660
+        } ]
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "31",
+        "vertices" : [ {
+          "x" : 535,
+          "y" : 1095
+        } ]
+      }, {
+        "id" : "30",
+        "vertices" : [ {
+          "x" : 425,
+          "y" : 1085
+        } ]
+      } ]
+    }, {
+      "key" : "device_CONTAINERS",
+      "order" : 2,
+      "description" : "LoraWan Device",
+      "softwareSystemId" : "1",
+      "dimensions" : {
+        "width" : 2365,
+        "height" : 2332
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 834,
+        "y" : 787
+      }, {
+        "id" : "33",
+        "x" : 1569,
+        "y" : 215
+      }, {
+        "id" : "2",
+        "x" : 855,
+        "y" : 1665
+      }, {
+        "id" : "3",
+        "x" : 849,
+        "y" : 1276
+      }, {
+        "id" : "14",
+        "x" : 249,
+        "y" : 1697
+      }, {
+        "id" : "15",
+        "x" : 794,
+        "y" : 200
+      }, {
+        "id" : "5",
+        "x" : 219,
+        "y" : 1276
+      }, {
+        "id" : "39",
+        "x" : 1714,
+        "y" : 931
+      }, {
+        "id" : "8",
+        "x" : 219,
+        "y" : 787
+      } ],
+      "relationships" : [ {
+        "id" : "50",
+        "vertices" : [ {
+          "x" : 1399,
+          "y" : 235
+        } ]
+      }, {
+        "id" : "51",
+        "vertices" : [ {
+          "x" : 1949,
+          "y" : 731
+        } ]
+      }, {
+        "id" : "41",
+        "vertices" : [ {
+          "x" : 969,
+          "y" : 660
+        }, {
+          "x" : 1008,
+          "y" : 526
+        } ]
+      }, {
+        "id" : "52",
+        "vertices" : [ {
+          "x" : 1759,
+          "y" : 726
+        } ]
+      }, {
+        "id" : "53",
+        "vertices" : [ {
+          "x" : 1439,
+          "y" : 375
+        } ]
+      }, {
+        "id" : "10",
+        "vertices" : [ {
+          "x" : 399,
+          "y" : 1192
+        } ]
+      }, {
+        "id" : "4"
+      }, {
+        "id" : "13",
+        "vertices" : [ {
+          "x" : 754,
+          "y" : 882
+        } ]
+      }, {
+        "id" : "12",
+        "vertices" : [ {
+          "x" : 739,
+          "y" : 1022
+        } ]
+      }, {
+        "id" : "6",
+        "vertices" : [ {
+          "x" : 769,
+          "y" : 1382
+        } ]
+      }, {
+        "id" : "7",
+        "vertices" : [ {
+          "x" : 749,
+          "y" : 1467
+        } ]
+      }, {
+        "id" : "56",
+        "vertices" : [ {
+          "x" : 1089,
+          "y" : 650
+        } ]
+      }, {
+        "id" : "9",
+        "vertices" : [ {
+          "x" : 509,
+          "y" : 1182
+        } ]
+      }, {
+        "id" : "45",
+        "vertices" : [ {
+          "x" : 1444,
+          "y" : 1046
+        }, {
+          "x" : 1609,
+          "y" : 641
+        } ]
+      }, {
+        "id" : "58"
+      }, {
+        "id" : "48",
+        "vertices" : [ {
+          "x" : 1589,
+          "y" : 1346
+        } ]
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "devtag",
+          "background" : "#008000",
+          "color" : "#ffffff",
+          "fontSize" : 24,
+          "shape" : "Hexagon"
+        }, {
+          "tag" : "gwtag",
+          "background" : "#ccccff",
+          "color" : "#ffffff",
+          "fontSize" : 24,
+          "shape" : "Pipe"
+        }, {
+          "tag" : "nstag",
+          "background" : "#bdb5d5",
+          "color" : "#ffffff",
+          "fontSize" : 24,
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "astag",
+          "background" : "#556b2f",
+          "color" : "#ffffff",
+          "fontSize" : 24,
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "sensorstag",
+          "background" : "#008000",
+          "color" : "#ffffff",
+          "fontSize" : 24,
+          "shape" : "Hexagon"
+        }, {
+          "tag" : "antennatag",
+          "background" : "#da70d6",
+          "color" : "#000000",
+          "shape" : "Component"
+        }, {
+          "tag" : "radiotag",
+          "background" : "#ee82ee",
+          "color" : "#000000",
+          "shape" : "Component"
+        }, {
+          "tag" : "modemtag",
+          "background" : "#e0b0ff",
+          "color" : "#000000",
+          "shape" : "Component"
+        }, {
+          "tag" : "cputag",
+          "background" : "#90ee90",
+          "color" : "#000000",
+          "shape" : "Component"
+        }, {
+          "tag" : "powertag",
+          "background" : "#cd5c5c",
+          "color" : "#ffffff",
+          "shape" : "Component"
+        }, {
+          "tag" : "gpstag",
+          "background" : "#87ceeb",
+          "color" : "#000000",
+          "shape" : "Component"
+        }, {
+          "tag" : "pktfwdtag",
+          "color" : "#ffffff",
+          "shape" : "Component"
+        }, {
+          "tag" : "backhaultag",
+          "color" : "#ffffff",
+          "shape" : "Component"
+        } ],
+        "relationships" : [ {
+          "tag" : "uplink",
+          "thickness" : 4,
+          "color" : "#32cd32",
+          "dashed" : false
+        }, {
+          "tag" : "downlink",
+          "thickness" : 4,
+          "color" : "#ff0000",
+          "dashed" : false
+        }, {
+          "tag" : "logical",
+          "thickness" : 4,
+          "color" : "#0000ff",
+          "dashed" : true
+        } ]
+      },
+      "terminology" : { },
+      "lastSavedView" : "device_CONTAINERS"
+    }
+  }
+}
