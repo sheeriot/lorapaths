@@ -55,7 +55,8 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
 
         networkserver = softwareSystem "Network Server" "LoRaWAN NS" nstag {
             pkt-bridge = container "Packet Bridge" "IP to RF" "daemon" pktbridgetag
-            dedup = container "DeDup" "LoRaWAN NS" "software" deduptag     
+            dedup = container "DeDup" "LoRaWAN NS" "software" deduptag
+            mac = container "MAC" "Media Access Control" "software" nsmactag
             join = container "Join" "LoRaWAN NS" "software" jointag
             integrations = container "integrations" "LoRaWAN NS" "software" fwdtag
             adr = container "ADR" "LoRaWAN NS" "software" adrtag
@@ -64,7 +65,8 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
         applicationserver = softwareSystem "Application Server" "data/control" astag
         
         device.antenna -> gateway.antenna uplinks RF uplink
-        device.mcu -> networkserver.dedup "LoRaWAN\nMAC" uplink/downlink logical
+        device.mcu -> networkserver.mac "LoRaWAN\nMAC" uplink logical
+        networkserver.mac -> device.mcu "LoRaWAN\nMAC" downlink logical
         device.mcu -> applicationserver reports uplink logical
         gateway -> networkserver uplinks pkt-fwd uplink
         networkserver -> applicationserver uplinks http uplink
@@ -72,6 +74,8 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
         networkserver -> gateway downlink pkt-fwd downlink
         gateway.antenna -> device.antenna downlinks RF downlink
         applicationserver -> device.mcu control downlink logical
+        gateway.pktfwd -> networkserver.pkt-bridge encaps uplink tunnel
+        networkserver.pkt-bridge -> gateway.pktfwd encaps downlink tunnel
     }
 
     views {
@@ -85,6 +89,10 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
         }
         
         container gateway gateway_CONTAINERS "LoraWan Gateway" {
+            include *
+        }
+
+        container networkserver networkserver_CONTAINERS "LoraWan Network Server" {
             include *
         }
 
@@ -113,7 +121,7 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             element gwtag {
                 // periwinkle
                 background #CCCCFF
-                color #ffffff
+                color black
                 fontSize 24
                 shape Pipe
                 # icon docs/images/tower.png
