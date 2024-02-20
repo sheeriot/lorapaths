@@ -54,12 +54,28 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
         }
 
         networkserver = softwareSystem "Network Server" "LoRaWAN NS" nstag {
-            pkt-bridge = container "Packet Bridge" "IP to RF" "daemon" pktbridgetag
-            dedup = container "DeDup" "LoRaWAN NS" "software" deduptag
-            mac = container "MAC" "Media Access Control" "software" nsmactag
-            join = container "Join" "LoRaWAN NS" "software" jointag
-            integrations = container "integrations" "LoRaWAN NS" "software" fwdtag
-            adr = container "ADR" "LoRaWAN NS" "software" adrtag
+            routing = container "Routing" "Traffic Router" "software" routertag 
+            pkt-bridge = container "Packet Bridge" "IP to RF" "daemon" pktbridgetag {
+                this -> routing uplinks
+                routing -> this downlinks
+            }
+            dedup = container "DeDup" "LoRaWAN NS" "software" deduptag {
+                routing -> this
+            }
+            mac = container "MAC" "Media Access Control" "software" nsmactag {
+                routing -> this
+                this -> routing
+            }
+            join = container "Join" "LoRaWAN NS" "software" jointag {
+                routing -> this
+            }
+            integrations = container "integrations" "LoRaWAN NS" "software" fwdtag {
+                routing -> this
+            }
+            adr = container "ADR" "LoRaWAN NS" "software" adrtag {
+                this -> mac
+            }
+
         }
 
         applicationserver = softwareSystem "Application Server" "data/control" astag
@@ -74,8 +90,8 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
         networkserver -> gateway downlink pkt-fwd downlink
         gateway.antenna -> device.antenna downlinks RF downlink
         applicationserver -> device.mcu control downlink logical
-        gateway.pktfwd -> networkserver.pkt-bridge encaps uplink tunnel
-        networkserver.pkt-bridge -> gateway.pktfwd encaps downlink tunnel
+        gateway.backhaul -> networkserver.pkt-bridge encaps uplink tunnel
+        networkserver.pkt-bridge -> gateway.backhaul encaps downlink tunnel
     }
 
     views {
