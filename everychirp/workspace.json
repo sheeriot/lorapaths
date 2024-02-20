@@ -2,7 +2,7 @@
   "id" : 1,
   "name" : "LoRaWAN Primer",
   "description" : "Quick-Start and Shared Reference Content for LoRaWANers",
-  "lastModifiedDate" : "2024-02-20T13:39:59Z",
+  "lastModifiedDate" : "2024-02-20T13:43:26Z",
   "lastModifiedAgent" : "structurizr-javascript",
   "properties" : {
     "structurizr.dsl" : "d29ya3NwYWNlICJMb1JhV0FOIFByaW1lciIgIlF1aWNrLVN0YXJ0IGFuZCBTaGFyZWQgUmVmZXJlbmNlIENvbnRlbnQgZm9yIExvUmFXQU5lcnMiIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCiAgICAhZG9jcyBkb2NzCiAgICAKICAgIG1vZGVsIHsKCiAgICAgICAgZGV2aWNlID0gc29mdHdhcmVTeXN0ZW0gIkxvUmFXQU4gRGV2aWNlIiAiYSBkZXZpY2UgaW4gdGhlIHdvcmxkIiBkZXZ0YWcgewogICAgICAgICAgICBzZW5zb3JzID0gY29udGFpbmVyICJQaHlzaWNhbCBTZW5zb3JzIiAiZ2V0IGRhdGEiICJoYXJkd2FyZSIgc2Vuc29yc3RhZwogICAgICAgICAgICBtY3UgPSBjb250YWluZXIgIk1pY3JvQ29udHJvbFVuaXQiICJvcGVyYXRlIGRldmljZSIgImhhcmR3YXJlIiBtY3V0YWcgewogICAgICAgICAgICAgICAgc2Vuc29ycyAtPiB0aGlzIHRlbGVtZXRyeQogICAgICAgICAgICB9CiAgICAgICAgICAgIG1vZGVtID0gY29udGFpbmVyICJNb2RlbSIgImNvbW11bmljYXRlIiAiaGFyZHdhcmUiIG1vZGVtdGFnIHsKICAgICAgICAgICAgICAgIG1jdSAtPiB0aGlzIGNvbW0tb3V0CiAgICAgICAgICAgICAgICB0aGlzIC0+IG1jdSBjb21tLWluCiAgICAgICAgICAgIH0KICAgICAgICAgICAgcmFkaW8gPSBjb250YWluZXIgIlJhZGlvIiAiUkYiICJjaGlwIiByYWRpb3RhZyB7CiAgICAgICAgICAgICAgICBtb2RlbSAtPiB0aGlzIG91dAogICAgICAgICAgICAgICAgdGhpcyAtPiBtb2RlbSBpbgogICAgICAgICAgICB9CiAgICAgICAgICAgIGFudGVubmEgPSBjb250YWluZXIgIkFudGVubmEiICIiICJoYXJkd2FyZSIgYW50ZW5uYXRhZyB7CiAgICAgICAgICAgICAgICByYWRpbyAtPiB0aGlzIG91dAogICAgICAgICAgICAgICAgdGhpcyAtPiByYWRpbyBpbgogICAgICAgICAgICB9CiAgICAgICAgICAgIHBvd2VyID0gY29udGFpbmVyICJwb3dlciIgIiIgImhhcmR3YXJlIiBwb3dlcnRhZwogICAgICAgIH0KCiAgICAgICAgZ2F0ZXdheSA9IHNvZnR3YXJlU3lzdGVtICJMb1JhV0FOIEdhdGV3YXkiICJSRiBDb3ZlcmFnZSIgZ3d0YWcgewogICAgICAgICAgICBiYWNraGF1bCA9IGNvbnRhaW5lciAiQmFja2hhdWwiICJJUCB0byBOZXR3b3JrIFNlcnZlciIgImludGVybmV0IiBiYWNraGF1bHRhZyAgIAogICAgICAgICAgICBwa3Rmd2QgPSBjb250YWluZXIgIlBhY2tldCBGb3J3YXJkZXIiICJSRiB0byBJUCIgImRhZW1vbiIgcGt0ZndkdGFnIHsKICAgICAgICAgICAgICAgIC0+IGJhY2toYXVsIGludGVybmV0IGNlbGx1bGFyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY3B1ID0gY29udGFpbmVyICJDUFUiICJnYXRld2F5IiAiaGFyZHdhcmUiIGNwdXRhZyB7CiAgICAgICAgICAgICAgICAtPiBwa3Rmd2QgY29udHJvbAogICAgICAgICAgICB9CgogICAgICAgICAgICBncHMgPSBjb250YWluZXIgIkdQUyIgIkdlb2xvY2F0aW9uIiAiIiBncHN0YWcgewogICAgICAgICAgICAgICAgY3B1IC0+IHRoaXMKICAgICAgICAgICAgfQogICAgICAgICAgICBtb2RlbSA9IGNvbnRhaW5lciAiTW9kZW0iICJjb21tdW5pY2F0ZSIgImhhcmR3YXJlIiBtb2RlbXRhZyB7CiAgICAgICAgICAgICAgICBwa3Rmd2QgLT4gdGhpcyBkb3dubGlua3MKICAgICAgICAgICAgICAgIHRoaXMgLT4gcGt0ZndkIHVwbGlua3MKICAgICAgICAgICAgfQogICAgICAgICAgICByYWRpbyA9IGNvbnRhaW5lciAiUmFkaW8iICJSRiIgImNoaXAiIHJhZGlvdGFnIHsKICAgICAgICAgICAgICAgIG1vZGVtIC0+IHRoaXMgb3V0CiAgICAgICAgICAgICAgICB0aGlzIC0+IG1vZGVtIGluCiAgICAgICAgICAgIH0KICAgICAgICAgICAgYW50ZW5uYSA9IGNvbnRhaW5lciAiQW50ZW5uYSIgIiIgImhhcmR3YXJlIiBhbnRlbm5hdGFnIHsKICAgICAgICAgICAgICAgIHJhZGlvIC0+IHRoaXMgb3V0CiAgICAgICAgICAgICAgICB0aGlzIC0+IHJhZGlvIGluCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIHBvd2VyID0gY29udGFpbmVyICJwb3dlciIgImdhdGV3YXkgcG93ZXIiICJoYXJkd2FyZSIgcG93ZXJ0YWcKICAgICAgICB9CgogICAgICAgIG5ldHdvcmtzZXJ2ZXIgPSBzb2Z0d2FyZVN5c3RlbSAiTmV0d29yayBTZXJ2ZXIiICJMb1JhV0FOIE5TIiBuc3RhZyB7CiAgICAgICAgICAgIHJvdXRpbmcgPSBjb250YWluZXIgIlJvdXRpbmciICJUcmFmZmljIFJvdXRlciIgInNvZnR3YXJlIiByb3V0ZXJ0YWcgCiAgICAgICAgICAgIHBrdC1icmlkZ2UgPSBjb250YWluZXIgIlBhY2tldCBCcmlkZ2UiICJJUCB0byBSRiIgImRhZW1vbiIgcGt0YnJpZGdldGFnIHsKICAgICAgICAgICAgICAgIHRoaXMgLT4gcm91dGluZyB1cGxpbmtzCiAgICAgICAgICAgICAgICByb3V0aW5nIC0+IHRoaXMgZG93bmxpbmtzCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZGVkdXAgPSBjb250YWluZXIgIkRlRHVwIiAiTG9SYVdBTiBOUyIgInNvZnR3YXJlIiBkZWR1cHRhZyB7CiAgICAgICAgICAgICAgICByb3V0aW5nIC0+IHRoaXMKICAgICAgICAgICAgfQogICAgICAgICAgICBtYWMgPSBjb250YWluZXIgIk1BQyIgIk1lZGlhIEFjY2VzcyBDb250cm9sIiAic29mdHdhcmUiIG5zbWFjdGFnIHsKICAgICAgICAgICAgICAgIHJvdXRpbmcgLT4gdGhpcwogICAgICAgICAgICAgICAgdGhpcyAtPiByb3V0aW5nCiAgICAgICAgICAgIH0KICAgICAgICAgICAgam9pbiA9IGNvbnRhaW5lciAiSm9pbiIgIkxvUmFXQU4gTlMiICJzb2Z0d2FyZSIgam9pbnRhZyB7CiAgICAgICAgICAgICAgICByb3V0aW5nIC0+IHRoaXMKICAgICAgICAgICAgfQogICAgICAgICAgICBpbnRlZ3JhdGlvbnMgPSBjb250YWluZXIgImludGVncmF0aW9ucyIgIkxvUmFXQU4gTlMiICJzb2Z0d2FyZSIgZndkdGFnIHsKICAgICAgICAgICAgICAgIHJvdXRpbmcgLT4gdGhpcwogICAgICAgICAgICB9CiAgICAgICAgICAgIGFkciA9IGNvbnRhaW5lciAiQURSIiAiTG9SYVdBTiBOUyIgInNvZnR3YXJlIiBhZHJ0YWcgewogICAgICAgICAgICAgICAgdGhpcyAtPiBtYWMKICAgICAgICAgICAgfQoKICAgICAgICB9CgogICAgICAgIGFwcGxpY2F0aW9uc2VydmVyID0gc29mdHdhcmVTeXN0ZW0gIkFwcGxpY2F0aW9uIFNlcnZlciIgImRhdGEvY29udHJvbCIgYXN0YWcKICAgICAgICAKICAgICAgICBkZXZpY2UuYW50ZW5uYSAtPiBnYXRld2F5LmFudGVubmEgdXBsaW5rcyBSRiB1cGxpbmsKICAgICAgICBkZXZpY2UubWN1IC0+IG5ldHdvcmtzZXJ2ZXIubWFjICJMb1JhV0FOXG5NQUMiIHVwbGluayBsb2dpY2FsCiAgICAgICAgbmV0d29ya3NlcnZlci5tYWMgLT4gZGV2aWNlLm1jdSAiTG9SYVdBTlxuTUFDIiBkb3dubGluayBsb2dpY2FsCiAgICAgICAgZGV2aWNlLm1jdSAtPiBhcHBsaWNhdGlvbnNlcnZlciByZXBvcnRzIHVwbGluayBsb2dpY2FsCiAgICAgICAgZ2F0ZXdheSAtPiBuZXR3b3Jrc2VydmVyIHVwbGlua3MgcGt0LWZ3ZCB1cGxpbmsKICAgICAgICBuZXR3b3Jrc2VydmVyIC0+IGFwcGxpY2F0aW9uc2VydmVyIHVwbGlua3MgaHR0cCB1cGxpbmsKICAgICAgICBhcHBsaWNhdGlvbnNlcnZlciAtPiBuZXR3b3Jrc2VydmVyIGRvd25saW5rIGh0dHAgZG93bmxpbmsKICAgICAgICBuZXR3b3Jrc2VydmVyIC0+IGdhdGV3YXkgZG93bmxpbmsgcGt0LWZ3ZCBkb3dubGluawogICAgICAgIGdhdGV3YXkuYW50ZW5uYSAtPiBkZXZpY2UuYW50ZW5uYSBkb3dubGlua3MgUkYgZG93bmxpbmsKICAgICAgICBhcHBsaWNhdGlvbnNlcnZlciAtPiBkZXZpY2UubWN1IGNvbnRyb2wgZG93bmxpbmsgbG9naWNhbAogICAgICAgIGdhdGV3YXkuYmFja2hhdWwgLT4gbmV0d29ya3NlcnZlci5wa3QtYnJpZGdlIGVuY2FwcyB1cGxpbmsgdHVubmVsCiAgICAgICAgbmV0d29ya3NlcnZlci5wa3QtYnJpZGdlIC0+IGdhdGV3YXkuYmFja2hhdWwgZW5jYXBzIGRvd25saW5rIHR1bm5lbAogICAgfQoKICAgIHZpZXdzIHsKICAgIAogICAgICAgIHN5c3RlbUNvbnRleHQgZGV2aWNlIExvUmFXQU4gIkxvcmFXYW4gUGFja2V0IEZsb3ciIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQogICAgICAgIAogICAgICAgIGNvbnRhaW5lciBkZXZpY2UgZGV2aWNlX0NPTlRBSU5FUlMgIkxvcmFXYW4gRGV2aWNlIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KICAgICAgICAKICAgICAgICBjb250YWluZXIgZ2F0ZXdheSBnYXRld2F5X0NPTlRBSU5FUlMgIkxvcmFXYW4gR2F0ZXdheSIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBuZXR3b3Jrc2VydmVyIG5ldHdvcmtzZXJ2ZXJfQ09OVEFJTkVSUyAiTG9yYVdhbiBOZXR3b3JrIFNlcnZlciIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIHJlbGF0aW9uc2hpcCB1cGxpbmsgewogICAgICAgICAgICAgICAgY29sb3IgTGltZUdyZWVuCiAgICAgICAgICAgICAgICBkYXNoZWQgZmFsc2UKICAgICAgICAgICAgICAgIHRoaWNrbmVzcyA0CiAgICAgICAgICAgIH0KICAgICAgICAgICAgcmVsYXRpb25zaGlwIGRvd25saW5rIHsKICAgICAgICAgICAgICAgIGNvbG9yIHJlZAogICAgICAgICAgICAgICAgZGFzaGVkIGZhbHNlCiAgICAgICAgICAgICAgICB0aGlja25lc3MgNAogICAgICAgICAgICB9CiAgICAgICAgICAgIHJlbGF0aW9uc2hpcCBsb2dpY2FsIHsgIAogICAgICAgICAgICAgICAgY29sb3IgYmx1ZQogICAgICAgICAgICAgICAgZGFzaGVkIHRydWUKICAgICAgICAgICAgICAgIHRoaWNrbmVzcyA0CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBkZXZ0YWcgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCBncmVlbgogICAgICAgICAgICAgICAgY29sb3Igd2hpdGUKICAgICAgICAgICAgICAgIGZvbnRTaXplIDI0CiAgICAgICAgICAgICAgICBzaGFwZSBIZXhhZ29uCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBnd3RhZyB7CiAgICAgICAgICAgICAgICAvLyBwZXJpd2lua2xlCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNDQ0NDRkYKICAgICAgICAgICAgICAgIGNvbG9yIGJsYWNrCiAgICAgICAgICAgICAgICBmb250U2l6ZSAyNAogICAgICAgICAgICAgICAgc2hhcGUgUGlwZQogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL3Rvd2VyLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgbnN0YWcgewogICAgICAgICAgICAgICAgLy8gd2lzdGVyaWEKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0JEQjVENQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICAgICAgZm9udFNpemUgMjQKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBhc3RhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kIGRhcmtvbGl2ZWdyZWVuCiAgICAgICAgICAgICAgICBjb2xvciB3aGl0ZQogICAgICAgICAgICAgICAgZm9udFNpemUgMjQKICAgICAgICAgICAgICAgIHNoYXBlIFJvdW5kZWRCb3gKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50IHNlbnNvcnN0YWcgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCBncmVlbgogICAgICAgICAgICAgICAgY29sb3Igd2hpdGUKICAgICAgICAgICAgICAgIGZvbnRTaXplIDI0CiAgICAgICAgICAgICAgICBzaGFwZSBIZXhhZ29uCiAgICAgICAgICAgICAgICAjIGljb24gZG9jcy9pbWFnZXMvdGhlcm0xMDAuanBnCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBhbnRlbm5hdGFnIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0RBNzBENgogICAgICAgICAgICAgICAgY29sb3IgYmxhY2sKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL2FudGVubmEucG5nCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCByYWRpb3RhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kIHZpb2xldAogICAgICAgICAgICAgICAgY29sb3IgYmxhY2sKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL2FudGVubmEucG5nCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBtb2RlbXRhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICAjRTBCMEZGCiAgICAgICAgICAgICAgICBjb2xvciBibGFjawogICAgICAgICAgICAgICAgc2hhcGUgQ29tcG9uZW50CiAgICAgICAgICAgICAgICAjIGljb24gZG9jcy9pbWFnZXMvYW50ZW5uYS5wbmcKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50IGNwdXRhZyB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kIExpZ2h0R3JlZW4KICAgICAgICAgICAgICAgIGNvbG9yIGJsYWNrCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgcG93ZXJ0YWcgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCBJbmRpYW5SZWQKICAgICAgICAgICAgICAgIGNvbG9yIHdoaXRlCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgZ3BzdGFnIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgU2t5Qmx1ZQogICAgICAgICAgICAgICAgY29sb3IgYmxhY2sKICAgICAgICAgICAgICAgIHNoYXBlIENvbXBvbmVudAogICAgICAgICAgICAgICAgIyBpY29uIGRvY3MvaW1hZ2VzL2FudGVubmEucG5nCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCBwa3Rmd2R0YWcgewogICAgICAgICAgICAgICAgIyBiYWNrZ3JvdW5kICNERjczRkYKICAgICAgICAgICAgICAgIGNvbG9yIHdoaXRlCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgYmFja2hhdWx0YWcgewogICAgICAgICAgICAgICAgIyBiYWNrZ3JvdW5kICM0RTJBODQKICAgICAgICAgICAgICAgIGNvbG9yIHdoaXRlCiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgICAgICMgaWNvbiBkb2NzL2ltYWdlcy9hbnRlbm5hLnBuZwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKfQo="
@@ -10,269 +10,246 @@
   "configuration" : { },
   "model" : {
     "softwareSystems" : [ {
-      "id" : "33",
-      "tags" : "Element,Software System,nstag",
+      "id" : "15",
+      "tags" : "Element,Software System,gwtag",
       "properties" : {
-        "structurizr.dsl.identifier" : "networkserver"
+        "structurizr.dsl.identifier" : "gateway"
       },
-      "name" : "Network Server",
-      "description" : "LoRaWAN NS",
+      "name" : "LoRaWAN Gateway",
+      "description" : "RF Coverage",
       "relationships" : [ {
-        "id" : "67",
-        "tags" : "Relationship,downlink",
-        "properties" : {
-          "structurizr.dsl.identifier" : "d70b9d02-ad9d-459c-8116-3dddc33c0462"
-        },
-        "sourceId" : "33",
-        "destinationId" : "15",
-        "description" : "downlink",
-        "technology" : "pkt-fwd"
+        "id" : "76",
+        "sourceId" : "15",
+        "destinationId" : "35",
+        "description" : "encaps",
+        "technology" : "uplink",
+        "linkedRelationshipId" : "74"
       }, {
-        "id" : "60",
-        "sourceId" : "33",
-        "destinationId" : "3",
-        "description" : "LoRaWAN\nMAC",
-        "technology" : "downlink",
-        "linkedRelationshipId" : "58"
+        "id" : "71",
+        "sourceId" : "15",
+        "destinationId" : "1",
+        "description" : "downlinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "68"
       }, {
-        "id" : "65",
+        "id" : "70",
+        "sourceId" : "15",
+        "destinationId" : "11",
+        "description" : "downlinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "68"
+      }, {
+        "id" : "64",
         "tags" : "Relationship,uplink",
         "properties" : {
-          "structurizr.dsl.identifier" : "77cfa445-068c-4004-a613-84d961258fa6"
+          "structurizr.dsl.identifier" : "3dbd64ce-d9ca-41e2-a013-671c61f9f001"
         },
-        "sourceId" : "33",
-        "destinationId" : "49",
+        "sourceId" : "15",
+        "destinationId" : "33",
         "description" : "uplinks",
-        "technology" : "http"
-      }, {
-        "id" : "61",
-        "sourceId" : "33",
-        "destinationId" : "1",
-        "description" : "LoRaWAN\nMAC",
-        "technology" : "downlink",
-        "linkedRelationshipId" : "58"
-      }, {
-        "id" : "79",
-        "sourceId" : "33",
-        "destinationId" : "16",
-        "description" : "encaps",
-        "technology" : "downlink",
-        "linkedRelationshipId" : "77"
+        "technology" : "pkt-fwd"
       } ],
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "34",
-        "tags" : "Element,Container,routertag",
+        "id" : "26",
+        "tags" : "Element,Container,radiotag",
         "properties" : {
-          "structurizr.dsl.identifier" : "networkserver.routing"
+          "structurizr.dsl.identifier" : "gateway.radio"
         },
-        "name" : "Routing",
-        "description" : "Traffic Router",
+        "name" : "Radio",
+        "description" : "RF",
         "relationships" : [ {
-          "id" : "41",
+          "id" : "30",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "133d17c4-175c-453b-9f06-2764d1b7d37a"
+            "structurizr.dsl.identifier" : "4ce368fd-0933-4ae2-931a-e8035afe28ac"
           },
-          "sourceId" : "34",
-          "destinationId" : "40"
+          "sourceId" : "26",
+          "destinationId" : "29",
+          "description" : "out"
         }, {
-          "id" : "44",
+          "id" : "28",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "129f7156-3bd6-4a1b-ad93-4c3e5044e738"
+            "structurizr.dsl.identifier" : "3347bbb7-76df-47a2-8539-034534c2f3f8"
           },
-          "sourceId" : "34",
-          "destinationId" : "43"
-        }, {
-          "id" : "37",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "b70f913d-28ed-466a-9de6-7fb962850d5a"
-          },
-          "sourceId" : "34",
-          "destinationId" : "35",
-          "description" : "downlinks"
-        }, {
-          "id" : "39",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "5ad972e3-03e7-4bbe-9e1f-51e41416612e"
-          },
-          "sourceId" : "34",
-          "destinationId" : "38"
-        }, {
-          "id" : "46",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "6e2c4f41-a144-4ab4-bd13-ff07009a2012"
-          },
-          "sourceId" : "34",
-          "destinationId" : "45"
+          "sourceId" : "26",
+          "destinationId" : "23",
+          "description" : "in"
         } ],
-        "technology" : "software",
+        "technology" : "chip",
         "documentation" : { }
       }, {
-        "id" : "38",
-        "tags" : "Element,Container,deduptag",
+        "id" : "29",
+        "tags" : "Element,Container,antennatag",
         "properties" : {
-          "structurizr.dsl.identifier" : "networkserver.dedup"
+          "structurizr.dsl.identifier" : "gateway.antenna"
         },
-        "name" : "DeDup",
-        "description" : "LoRaWAN NS",
-        "technology" : "software",
-        "documentation" : { }
-      }, {
-        "id" : "43",
-        "tags" : "Element,Container,jointag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "networkserver.join"
-        },
-        "name" : "Join",
-        "description" : "LoRaWAN NS",
-        "technology" : "software",
-        "documentation" : { }
-      }, {
-        "id" : "45",
-        "tags" : "Element,Container,fwdtag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "networkserver.integrations"
-        },
-        "name" : "integrations",
-        "description" : "LoRaWAN NS",
-        "technology" : "software",
-        "documentation" : { }
-      }, {
-        "id" : "47",
-        "tags" : "Element,Container,adrtag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "networkserver.adr"
-        },
-        "name" : "ADR",
-        "description" : "LoRaWAN NS",
+        "name" : "Antenna",
         "relationships" : [ {
-          "id" : "48",
+          "id" : "31",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "b15a57af-9d5b-4fee-89b0-fbf993dd4333"
+            "structurizr.dsl.identifier" : "d9727528-2dd1-4bd5-8aed-79d1f10b2309"
           },
-          "sourceId" : "47",
-          "destinationId" : "40"
-        } ],
-        "technology" : "software",
-        "documentation" : { }
-      }, {
-        "id" : "35",
-        "tags" : "Element,Container,pktbridgetag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "networkserver.pkt-bridge"
-        },
-        "name" : "Packet Bridge",
-        "description" : "IP to RF",
-        "relationships" : [ {
-          "id" : "77",
-          "tags" : "Relationship,tunnel",
-          "properties" : {
-            "structurizr.dsl.identifier" : "e9c20e13-d869-4140-99b1-07e701dcc85b"
-          },
-          "sourceId" : "35",
-          "destinationId" : "16",
-          "description" : "encaps",
-          "technology" : "downlink"
+          "sourceId" : "29",
+          "destinationId" : "26",
+          "description" : "in"
         }, {
-          "id" : "36",
+          "id" : "68",
+          "tags" : "Relationship,downlink",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8301d974-e8b1-4980-b835-2e83ab81d3a6"
+          },
+          "sourceId" : "29",
+          "destinationId" : "11",
+          "description" : "downlinks",
+          "technology" : "RF"
+        }, {
+          "id" : "69",
+          "sourceId" : "29",
+          "destinationId" : "1",
+          "description" : "downlinks",
+          "technology" : "RF",
+          "linkedRelationshipId" : "68"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "23",
+        "tags" : "Element,Container,modemtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.modem"
+        },
+        "name" : "Modem",
+        "description" : "communicate",
+        "relationships" : [ {
+          "id" : "25",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "851ab499-9576-4de5-9245-1049752c85a5"
+            "structurizr.dsl.identifier" : "f9021052-6618-4d41-9c54-026fe7473a65"
           },
-          "sourceId" : "35",
-          "destinationId" : "34",
+          "sourceId" : "23",
+          "destinationId" : "17",
           "description" : "uplinks"
         }, {
-          "id" : "78",
-          "sourceId" : "35",
-          "destinationId" : "15",
-          "description" : "encaps",
-          "technology" : "downlink",
-          "linkedRelationshipId" : "77"
+          "id" : "27",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "923a19d0-5e56-4b9f-a0ca-4657ecf2007e"
+          },
+          "sourceId" : "23",
+          "destinationId" : "26",
+          "description" : "out"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "32",
+        "tags" : "Element,Container,powertag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.power"
+        },
+        "name" : "power",
+        "description" : "gateway power",
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "17",
+        "tags" : "Element,Container,pktfwdtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.pktfwd"
+        },
+        "name" : "Packet Forwarder",
+        "description" : "RF to IP",
+        "relationships" : [ {
+          "id" : "18",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "408ac499-ef02-4797-a757-de1eac41691f"
+          },
+          "sourceId" : "17",
+          "destinationId" : "16",
+          "description" : "internet",
+          "technology" : "cellular"
+        }, {
+          "id" : "24",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "abb60d3c-4ca5-4738-8a9e-0b06526d9558"
+          },
+          "sourceId" : "17",
+          "destinationId" : "23",
+          "description" : "downlinks"
         } ],
         "technology" : "daemon",
         "documentation" : { }
       }, {
-        "id" : "40",
-        "tags" : "Element,Container,nsmactag",
+        "id" : "16",
+        "tags" : "Element,Container,backhaultag",
         "properties" : {
-          "structurizr.dsl.identifier" : "networkserver.mac"
+          "structurizr.dsl.identifier" : "gateway.backhaul"
         },
-        "name" : "MAC",
-        "description" : "Media Access Control",
+        "name" : "Backhaul",
+        "description" : "IP to Network Server",
         "relationships" : [ {
-          "id" : "59",
-          "sourceId" : "40",
-          "destinationId" : "1",
-          "description" : "LoRaWAN\nMAC",
-          "technology" : "downlink",
-          "linkedRelationshipId" : "58"
-        }, {
-          "id" : "58",
-          "tags" : "Relationship,logical",
+          "id" : "74",
+          "tags" : "Relationship,tunnel",
           "properties" : {
-            "structurizr.dsl.identifier" : "392ec035-c87e-4d6f-9114-863ce70c08cd"
+            "structurizr.dsl.identifier" : "860e84c3-02c0-477a-840f-b925bac5db4c"
           },
-          "sourceId" : "40",
-          "destinationId" : "3",
-          "description" : "LoRaWAN\nMAC",
-          "technology" : "downlink"
+          "sourceId" : "16",
+          "destinationId" : "35",
+          "description" : "encaps",
+          "technology" : "uplink"
         }, {
-          "id" : "42",
+          "id" : "75",
+          "sourceId" : "16",
+          "destinationId" : "33",
+          "description" : "encaps",
+          "technology" : "uplink",
+          "linkedRelationshipId" : "74"
+        } ],
+        "technology" : "internet",
+        "documentation" : { }
+      }, {
+        "id" : "19",
+        "tags" : "Element,Container,cputag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.cpu"
+        },
+        "name" : "CPU",
+        "description" : "gateway",
+        "relationships" : [ {
+          "id" : "20",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "86887ee3-07f7-4a0f-a478-c9d1c56149f8"
+            "structurizr.dsl.identifier" : "dd00f667-67eb-47fe-bda5-0b2df2889012"
           },
-          "sourceId" : "40",
-          "destinationId" : "34"
+          "sourceId" : "19",
+          "destinationId" : "17",
+          "description" : "control"
+        }, {
+          "id" : "22",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "71743980-03d7-4815-b9b8-79fd0850aa8b"
+          },
+          "sourceId" : "19",
+          "destinationId" : "21"
         } ],
-        "technology" : "software",
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "21",
+        "tags" : "Element,Container,gpstag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "gateway.gps"
+        },
+        "name" : "GPS",
+        "description" : "Geolocation",
         "documentation" : { }
       } ],
-      "documentation" : { }
-    }, {
-      "id" : "49",
-      "tags" : "Element,Software System,astag",
-      "properties" : {
-        "structurizr.dsl.identifier" : "applicationserver"
-      },
-      "name" : "Application Server",
-      "description" : "data/control",
-      "relationships" : [ {
-        "id" : "72",
-        "tags" : "Relationship,logical",
-        "properties" : {
-          "structurizr.dsl.identifier" : "6ab28bee-3165-4da7-a59e-46c42e3a088e"
-        },
-        "sourceId" : "49",
-        "destinationId" : "3",
-        "description" : "control",
-        "technology" : "downlink"
-      }, {
-        "id" : "73",
-        "sourceId" : "49",
-        "destinationId" : "1",
-        "description" : "control",
-        "technology" : "downlink",
-        "linkedRelationshipId" : "72"
-      }, {
-        "id" : "66",
-        "tags" : "Relationship,downlink",
-        "properties" : {
-          "structurizr.dsl.identifier" : "134f97ec-d96c-45de-8cfe-e6c16b188424"
-        },
-        "sourceId" : "49",
-        "destinationId" : "33",
-        "description" : "downlink",
-        "technology" : "http"
-      } ],
-      "location" : "Unspecified",
       "documentation" : { }
     }, {
       "id" : "1",
@@ -283,12 +260,26 @@
       "name" : "LoRaWAN Device",
       "description" : "a device in the world",
       "relationships" : [ {
+        "id" : "52",
+        "sourceId" : "1",
+        "destinationId" : "29",
+        "description" : "uplinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "50"
+      }, {
         "id" : "56",
         "sourceId" : "1",
         "destinationId" : "40",
         "description" : "LoRaWAN\nMAC",
         "technology" : "uplink",
         "linkedRelationshipId" : "54"
+      }, {
+        "id" : "53",
+        "sourceId" : "1",
+        "destinationId" : "15",
+        "description" : "uplinks",
+        "technology" : "RF",
+        "linkedRelationshipId" : "50"
       }, {
         "id" : "57",
         "sourceId" : "1",
@@ -297,29 +288,147 @@
         "technology" : "uplink",
         "linkedRelationshipId" : "54"
       }, {
-        "id" : "52",
-        "sourceId" : "1",
-        "destinationId" : "29",
-        "description" : "uplinks",
-        "technology" : "RF",
-        "linkedRelationshipId" : "50"
-      }, {
         "id" : "63",
         "sourceId" : "1",
         "destinationId" : "49",
         "description" : "reports",
         "technology" : "uplink",
         "linkedRelationshipId" : "62"
-      }, {
-        "id" : "53",
-        "sourceId" : "1",
-        "destinationId" : "15",
-        "description" : "uplinks",
-        "technology" : "RF",
-        "linkedRelationshipId" : "50"
       } ],
       "location" : "Unspecified",
       "containers" : [ {
+        "id" : "5",
+        "tags" : "Element,Container,modemtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.modem"
+        },
+        "name" : "Modem",
+        "description" : "communicate",
+        "relationships" : [ {
+          "id" : "7",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "642ea82a-aaa8-4bc6-9905-119dd1c956bd"
+          },
+          "sourceId" : "5",
+          "destinationId" : "3",
+          "description" : "comm-in"
+        }, {
+          "id" : "9",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "92d3301d-ec18-4269-be2f-09000bf736b5"
+          },
+          "sourceId" : "5",
+          "destinationId" : "8",
+          "description" : "out"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "2",
+        "tags" : "Element,Container,sensorstag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.sensors"
+        },
+        "name" : "Physical Sensors",
+        "description" : "get data",
+        "relationships" : [ {
+          "id" : "4",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "300bb0a5-c4eb-49e7-8f95-3a9af626985a"
+          },
+          "sourceId" : "2",
+          "destinationId" : "3",
+          "description" : "telemetry"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "11",
+        "tags" : "Element,Container,antennatag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.antenna"
+        },
+        "name" : "Antenna",
+        "relationships" : [ {
+          "id" : "51",
+          "sourceId" : "11",
+          "destinationId" : "15",
+          "description" : "uplinks",
+          "technology" : "RF",
+          "linkedRelationshipId" : "50"
+        }, {
+          "id" : "13",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "75bae69f-91a5-4512-b991-0734f3487418"
+          },
+          "sourceId" : "11",
+          "destinationId" : "8",
+          "description" : "in"
+        }, {
+          "id" : "50",
+          "tags" : "Relationship,uplink",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a6180212-14a5-4152-b035-615e34875278"
+          },
+          "sourceId" : "11",
+          "destinationId" : "29",
+          "description" : "uplinks",
+          "technology" : "RF"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
+        "id" : "3",
+        "tags" : "Element,Container,mcutag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "device.mcu"
+        },
+        "name" : "MicroControlUnit",
+        "description" : "operate device",
+        "relationships" : [ {
+          "id" : "54",
+          "tags" : "Relationship,logical",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bd893e96-3c2e-44d7-9170-c59ba0782957"
+          },
+          "sourceId" : "3",
+          "destinationId" : "40",
+          "description" : "LoRaWAN\nMAC",
+          "technology" : "uplink"
+        }, {
+          "id" : "6",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "de06fa57-55c9-43cc-ade1-88662b28f318"
+          },
+          "sourceId" : "3",
+          "destinationId" : "5",
+          "description" : "comm-out"
+        }, {
+          "id" : "55",
+          "sourceId" : "3",
+          "destinationId" : "33",
+          "description" : "LoRaWAN\nMAC",
+          "technology" : "uplink",
+          "linkedRelationshipId" : "54"
+        }, {
+          "id" : "62",
+          "tags" : "Relationship,logical",
+          "properties" : {
+            "structurizr.dsl.identifier" : "bb7793dc-9aba-4b95-9dd5-9aafbcd8b385"
+          },
+          "sourceId" : "3",
+          "destinationId" : "49",
+          "description" : "reports",
+          "technology" : "uplink"
+        } ],
+        "technology" : "hardware",
+        "documentation" : { }
+      }, {
         "id" : "14",
         "tags" : "Element,Container,powertag",
         "properties" : {
@@ -337,397 +446,288 @@
         "name" : "Radio",
         "description" : "RF",
         "relationships" : [ {
+          "id" : "10",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "eea98cbe-eb16-4afb-a6f7-23381536da7f"
+          },
+          "sourceId" : "8",
+          "destinationId" : "5",
+          "description" : "in"
+        }, {
           "id" : "12",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "2242fcd1-d4bf-4ac1-81da-049b91ed6ec1"
+            "structurizr.dsl.identifier" : "244adc73-08d5-4b63-88f2-a587a5ef6920"
           },
           "sourceId" : "8",
           "destinationId" : "11",
           "description" : "out"
-        }, {
-          "id" : "10",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "aea3f868-8406-4bfe-8383-91a31b92baff"
-          },
-          "sourceId" : "8",
-          "destinationId" : "5",
-          "description" : "in"
         } ],
         "technology" : "chip",
-        "documentation" : { }
-      }, {
-        "id" : "11",
-        "tags" : "Element,Container,antennatag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "device.antenna"
-        },
-        "name" : "Antenna",
-        "relationships" : [ {
-          "id" : "50",
-          "tags" : "Relationship,uplink",
-          "properties" : {
-            "structurizr.dsl.identifier" : "51cef23d-6626-4cec-91bd-b70d1745a60e"
-          },
-          "sourceId" : "11",
-          "destinationId" : "29",
-          "description" : "uplinks",
-          "technology" : "RF"
-        }, {
-          "id" : "13",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "1cfdee37-5204-4604-8d05-e473415f4caa"
-          },
-          "sourceId" : "11",
-          "destinationId" : "8",
-          "description" : "in"
-        }, {
-          "id" : "51",
-          "sourceId" : "11",
-          "destinationId" : "15",
-          "description" : "uplinks",
-          "technology" : "RF",
-          "linkedRelationshipId" : "50"
-        } ],
-        "technology" : "hardware",
-        "documentation" : { }
-      }, {
-        "id" : "5",
-        "tags" : "Element,Container,modemtag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "device.modem"
-        },
-        "name" : "Modem",
-        "description" : "communicate",
-        "relationships" : [ {
-          "id" : "9",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "52a628ac-c7d0-4a04-aa1f-2bf6ee4c19d2"
-          },
-          "sourceId" : "5",
-          "destinationId" : "8",
-          "description" : "out"
-        }, {
-          "id" : "7",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "737a334a-62ca-4622-8f11-80250fc81b1d"
-          },
-          "sourceId" : "5",
-          "destinationId" : "3",
-          "description" : "comm-in"
-        } ],
-        "technology" : "hardware",
-        "documentation" : { }
-      }, {
-        "id" : "2",
-        "tags" : "Element,Container,sensorstag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "device.sensors"
-        },
-        "name" : "Physical Sensors",
-        "description" : "get data",
-        "relationships" : [ {
-          "id" : "4",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "91362a86-5468-4ae0-aa16-2d1c76354ccc"
-          },
-          "sourceId" : "2",
-          "destinationId" : "3",
-          "description" : "telemetry"
-        } ],
-        "technology" : "hardware",
-        "documentation" : { }
-      }, {
-        "id" : "3",
-        "tags" : "Element,Container,mcutag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "device.mcu"
-        },
-        "name" : "MicroControlUnit",
-        "description" : "operate device",
-        "relationships" : [ {
-          "id" : "55",
-          "sourceId" : "3",
-          "destinationId" : "33",
-          "description" : "LoRaWAN\nMAC",
-          "technology" : "uplink",
-          "linkedRelationshipId" : "54"
-        }, {
-          "id" : "62",
-          "tags" : "Relationship,logical",
-          "properties" : {
-            "structurizr.dsl.identifier" : "8298791e-5f9d-4900-9133-630ca4ad2810"
-          },
-          "sourceId" : "3",
-          "destinationId" : "49",
-          "description" : "reports",
-          "technology" : "uplink"
-        }, {
-          "id" : "54",
-          "tags" : "Relationship,logical",
-          "properties" : {
-            "structurizr.dsl.identifier" : "b25f7f02-d689-48fe-9e58-a5fbbe5951db"
-          },
-          "sourceId" : "3",
-          "destinationId" : "40",
-          "description" : "LoRaWAN\nMAC",
-          "technology" : "uplink"
-        }, {
-          "id" : "6",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "3174df82-6969-4e8c-8cac-55aebac09f05"
-          },
-          "sourceId" : "3",
-          "destinationId" : "5",
-          "description" : "comm-out"
-        } ],
-        "technology" : "hardware",
         "documentation" : { }
       } ],
       "documentation" : { }
     }, {
-      "id" : "15",
-      "tags" : "Element,Software System,gwtag",
+      "id" : "49",
+      "tags" : "Element,Software System,astag",
       "properties" : {
-        "structurizr.dsl.identifier" : "gateway"
+        "structurizr.dsl.identifier" : "applicationserver"
       },
-      "name" : "LoRaWAN Gateway",
-      "description" : "RF Coverage",
+      "name" : "Application Server",
+      "description" : "data/control",
       "relationships" : [ {
-        "id" : "76",
-        "sourceId" : "15",
-        "destinationId" : "35",
-        "description" : "encaps",
-        "technology" : "uplink",
-        "linkedRelationshipId" : "74"
+        "id" : "66",
+        "tags" : "Relationship,downlink",
+        "properties" : {
+          "structurizr.dsl.identifier" : "99627230-e93c-47e6-91e3-29381d2c90cc"
+        },
+        "sourceId" : "49",
+        "destinationId" : "33",
+        "description" : "downlink",
+        "technology" : "http"
       }, {
-        "id" : "64",
+        "id" : "72",
+        "tags" : "Relationship,logical",
+        "properties" : {
+          "structurizr.dsl.identifier" : "5174cd96-ec91-4b04-ae95-99d618f751b7"
+        },
+        "sourceId" : "49",
+        "destinationId" : "3",
+        "description" : "control",
+        "technology" : "downlink"
+      }, {
+        "id" : "73",
+        "sourceId" : "49",
+        "destinationId" : "1",
+        "description" : "control",
+        "technology" : "downlink",
+        "linkedRelationshipId" : "72"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "33",
+      "tags" : "Element,Software System,nstag",
+      "properties" : {
+        "structurizr.dsl.identifier" : "networkserver"
+      },
+      "name" : "Network Server",
+      "description" : "LoRaWAN NS",
+      "relationships" : [ {
+        "id" : "79",
+        "sourceId" : "33",
+        "destinationId" : "16",
+        "description" : "encaps",
+        "technology" : "downlink",
+        "linkedRelationshipId" : "77"
+      }, {
+        "id" : "60",
+        "sourceId" : "33",
+        "destinationId" : "3",
+        "description" : "LoRaWAN\nMAC",
+        "technology" : "downlink",
+        "linkedRelationshipId" : "58"
+      }, {
+        "id" : "61",
+        "sourceId" : "33",
+        "destinationId" : "1",
+        "description" : "LoRaWAN\nMAC",
+        "technology" : "downlink",
+        "linkedRelationshipId" : "58"
+      }, {
+        "id" : "65",
         "tags" : "Relationship,uplink",
         "properties" : {
-          "structurizr.dsl.identifier" : "0eb68621-0d3a-4730-8f2b-9bb9ac86a382"
+          "structurizr.dsl.identifier" : "ddcbecb9-26d1-4c62-ab04-2d57fcb52e31"
         },
-        "sourceId" : "15",
-        "destinationId" : "33",
+        "sourceId" : "33",
+        "destinationId" : "49",
         "description" : "uplinks",
+        "technology" : "http"
+      }, {
+        "id" : "67",
+        "tags" : "Relationship,downlink",
+        "properties" : {
+          "structurizr.dsl.identifier" : "617ddb9a-9347-4867-8c41-244db8f9f61b"
+        },
+        "sourceId" : "33",
+        "destinationId" : "15",
+        "description" : "downlink",
         "technology" : "pkt-fwd"
-      }, {
-        "id" : "71",
-        "sourceId" : "15",
-        "destinationId" : "1",
-        "description" : "downlinks",
-        "technology" : "RF",
-        "linkedRelationshipId" : "68"
-      }, {
-        "id" : "70",
-        "sourceId" : "15",
-        "destinationId" : "11",
-        "description" : "downlinks",
-        "technology" : "RF",
-        "linkedRelationshipId" : "68"
       } ],
       "location" : "Unspecified",
       "containers" : [ {
-        "id" : "26",
-        "tags" : "Element,Container,radiotag",
+        "id" : "38",
+        "tags" : "Element,Container,deduptag",
         "properties" : {
-          "structurizr.dsl.identifier" : "gateway.radio"
+          "structurizr.dsl.identifier" : "networkserver.dedup"
         },
-        "name" : "Radio",
-        "description" : "RF",
-        "relationships" : [ {
-          "id" : "28",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "5e957630-1469-4452-85f4-1dda141b4833"
-          },
-          "sourceId" : "26",
-          "destinationId" : "23",
-          "description" : "in"
-        }, {
-          "id" : "30",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "35ba19a2-911e-4a5d-bffc-340eceaf11c7"
-          },
-          "sourceId" : "26",
-          "destinationId" : "29",
-          "description" : "out"
-        } ],
-        "technology" : "chip",
+        "name" : "DeDup",
+        "description" : "LoRaWAN NS",
+        "technology" : "software",
         "documentation" : { }
       }, {
-        "id" : "32",
-        "tags" : "Element,Container,powertag",
+        "id" : "34",
+        "tags" : "Element,Container,routertag",
         "properties" : {
-          "structurizr.dsl.identifier" : "gateway.power"
+          "structurizr.dsl.identifier" : "networkserver.routing"
         },
-        "name" : "power",
-        "description" : "gateway power",
-        "technology" : "hardware",
-        "documentation" : { }
-      }, {
-        "id" : "16",
-        "tags" : "Element,Container,backhaultag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "gateway.backhaul"
-        },
-        "name" : "Backhaul",
-        "description" : "IP to Network Server",
+        "name" : "Routing",
+        "description" : "Traffic Router",
         "relationships" : [ {
-          "id" : "75",
-          "sourceId" : "16",
-          "destinationId" : "33",
-          "description" : "encaps",
-          "technology" : "uplink",
-          "linkedRelationshipId" : "74"
-        }, {
-          "id" : "74",
-          "tags" : "Relationship,tunnel",
+          "id" : "37",
+          "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "075f3513-bb3a-4486-b7b9-a0075dfa56c0"
+            "structurizr.dsl.identifier" : "81d1f1b8-6217-4b74-b4fe-f63b9baecbad"
           },
-          "sourceId" : "16",
+          "sourceId" : "34",
           "destinationId" : "35",
-          "description" : "encaps",
-          "technology" : "uplink"
-        } ],
-        "technology" : "internet",
-        "documentation" : { }
-      }, {
-        "id" : "29",
-        "tags" : "Element,Container,antennatag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "gateway.antenna"
-        },
-        "name" : "Antenna",
-        "relationships" : [ {
-          "id" : "31",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "5df63dd8-2c08-4a38-b01e-78c0545dc0cd"
-          },
-          "sourceId" : "29",
-          "destinationId" : "26",
-          "description" : "in"
-        }, {
-          "id" : "69",
-          "sourceId" : "29",
-          "destinationId" : "1",
-          "description" : "downlinks",
-          "technology" : "RF",
-          "linkedRelationshipId" : "68"
-        }, {
-          "id" : "68",
-          "tags" : "Relationship,downlink",
-          "properties" : {
-            "structurizr.dsl.identifier" : "c210c0ad-acbe-4a9a-9c5d-e84ec5614d23"
-          },
-          "sourceId" : "29",
-          "destinationId" : "11",
-          "description" : "downlinks",
-          "technology" : "RF"
-        } ],
-        "technology" : "hardware",
-        "documentation" : { }
-      }, {
-        "id" : "21",
-        "tags" : "Element,Container,gpstag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "gateway.gps"
-        },
-        "name" : "GPS",
-        "description" : "Geolocation",
-        "documentation" : { }
-      }, {
-        "id" : "23",
-        "tags" : "Element,Container,modemtag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "gateway.modem"
-        },
-        "name" : "Modem",
-        "description" : "communicate",
-        "relationships" : [ {
-          "id" : "27",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "382176ba-c303-4b3a-9444-a3e73e50829e"
-          },
-          "sourceId" : "23",
-          "destinationId" : "26",
-          "description" : "out"
-        }, {
-          "id" : "25",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "89cc2944-570a-4cd2-b889-1f5e9045a914"
-          },
-          "sourceId" : "23",
-          "destinationId" : "17",
-          "description" : "uplinks"
-        } ],
-        "technology" : "hardware",
-        "documentation" : { }
-      }, {
-        "id" : "19",
-        "tags" : "Element,Container,cputag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "gateway.cpu"
-        },
-        "name" : "CPU",
-        "description" : "gateway",
-        "relationships" : [ {
-          "id" : "22",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "7804f1eb-4917-4903-ba40-54fe84c250f6"
-          },
-          "sourceId" : "19",
-          "destinationId" : "21"
-        }, {
-          "id" : "20",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "d4abbdfd-d7a7-4444-b2d5-a83b04e8d449"
-          },
-          "sourceId" : "19",
-          "destinationId" : "17",
-          "description" : "control"
-        } ],
-        "technology" : "hardware",
-        "documentation" : { }
-      }, {
-        "id" : "17",
-        "tags" : "Element,Container,pktfwdtag",
-        "properties" : {
-          "structurizr.dsl.identifier" : "gateway.pktfwd"
-        },
-        "name" : "Packet Forwarder",
-        "description" : "RF to IP",
-        "relationships" : [ {
-          "id" : "24",
-          "tags" : "Relationship",
-          "properties" : {
-            "structurizr.dsl.identifier" : "ff0e245e-d6ff-4087-928c-1afd069321d8"
-          },
-          "sourceId" : "17",
-          "destinationId" : "23",
           "description" : "downlinks"
         }, {
-          "id" : "18",
+          "id" : "39",
           "tags" : "Relationship",
           "properties" : {
-            "structurizr.dsl.identifier" : "725c9a4f-73af-42e0-a3dd-3492958c498e"
+            "structurizr.dsl.identifier" : "32e15d2e-02ca-4426-8502-856ebbc64dfe"
           },
-          "sourceId" : "17",
+          "sourceId" : "34",
+          "destinationId" : "38"
+        }, {
+          "id" : "46",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "93a32280-3521-42ad-b267-c3b0cca7dbf4"
+          },
+          "sourceId" : "34",
+          "destinationId" : "45"
+        }, {
+          "id" : "41",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "645587d3-ad4b-4ca1-ad6f-cbec5c74be63"
+          },
+          "sourceId" : "34",
+          "destinationId" : "40"
+        }, {
+          "id" : "44",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2931f586-294a-4b35-b36f-a9516203bc45"
+          },
+          "sourceId" : "34",
+          "destinationId" : "43"
+        } ],
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "47",
+        "tags" : "Element,Container,adrtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.adr"
+        },
+        "name" : "ADR",
+        "description" : "LoRaWAN NS",
+        "relationships" : [ {
+          "id" : "48",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "41d0641d-0fa6-4b7c-8146-ebfa85f326c9"
+          },
+          "sourceId" : "47",
+          "destinationId" : "40"
+        } ],
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "40",
+        "tags" : "Element,Container,nsmactag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.mac"
+        },
+        "name" : "MAC",
+        "description" : "Media Access Control",
+        "relationships" : [ {
+          "id" : "42",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c5ab7668-34f8-4235-91be-7d046fdebd39"
+          },
+          "sourceId" : "40",
+          "destinationId" : "34"
+        }, {
+          "id" : "58",
+          "tags" : "Relationship,logical",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2ab2fe0f-842a-4dce-be0f-255009c39c8d"
+          },
+          "sourceId" : "40",
+          "destinationId" : "3",
+          "description" : "LoRaWAN\nMAC",
+          "technology" : "downlink"
+        }, {
+          "id" : "59",
+          "sourceId" : "40",
+          "destinationId" : "1",
+          "description" : "LoRaWAN\nMAC",
+          "technology" : "downlink",
+          "linkedRelationshipId" : "58"
+        } ],
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "45",
+        "tags" : "Element,Container,fwdtag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.integrations"
+        },
+        "name" : "integrations",
+        "description" : "LoRaWAN NS",
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "43",
+        "tags" : "Element,Container,jointag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.join"
+        },
+        "name" : "Join",
+        "description" : "LoRaWAN NS",
+        "technology" : "software",
+        "documentation" : { }
+      }, {
+        "id" : "35",
+        "tags" : "Element,Container,pktbridgetag",
+        "properties" : {
+          "structurizr.dsl.identifier" : "networkserver.pkt-bridge"
+        },
+        "name" : "Packet Bridge",
+        "description" : "IP to RF",
+        "relationships" : [ {
+          "id" : "36",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6c6f9930-b8ab-4c83-9205-8f1f10e2d9e8"
+          },
+          "sourceId" : "35",
+          "destinationId" : "34",
+          "description" : "uplinks"
+        }, {
+          "id" : "77",
+          "tags" : "Relationship,tunnel",
+          "properties" : {
+            "structurizr.dsl.identifier" : "e64ec854-5ea0-4443-9e40-f4f60139bfe7"
+          },
+          "sourceId" : "35",
           "destinationId" : "16",
-          "description" : "internet",
-          "technology" : "cellular"
+          "description" : "encaps",
+          "technology" : "downlink"
+        }, {
+          "id" : "78",
+          "sourceId" : "35",
+          "destinationId" : "15",
+          "description" : "encaps",
+          "technology" : "downlink",
+          "linkedRelationshipId" : "77"
         } ],
         "technology" : "daemon",
         "documentation" : { }
@@ -749,84 +749,228 @@
       "enterpriseBoundaryVisible" : true,
       "elements" : [ {
         "id" : "33",
-        "x" : 1325,
+        "x" : 1324,
         "y" : 220
       }, {
         "id" : "1",
-        "x" : 210,
+        "x" : 209,
         "y" : 890
       }, {
         "id" : "15",
-        "x" : 200,
+        "x" : 199,
         "y" : 200
       }, {
         "id" : "49",
-        "x" : 1295,
+        "x" : 1294,
         "y" : 955
       } ],
       "relationships" : [ {
         "id" : "61",
         "vertices" : [ {
-          "x" : 911,
+          "x" : 910,
           "y" : 600
         } ]
       }, {
         "id" : "71",
         "vertices" : [ {
-          "x" : 505,
+          "x" : 504,
           "y" : 715
         } ]
       }, {
         "id" : "63",
         "vertices" : [ {
-          "x" : 970,
+          "x" : 969,
           "y" : 1025
         } ]
       }, {
         "id" : "73",
         "vertices" : [ {
-          "x" : 965,
+          "x" : 964,
           "y" : 1165
-        } ]
-      }, {
-        "id" : "53",
-        "vertices" : [ {
-          "x" : 365,
-          "y" : 720
         } ]
       }, {
         "id" : "65",
         "vertices" : [ {
-          "x" : 1615,
+          "x" : 1614,
           "y" : 785
+        } ]
+      }, {
+        "id" : "53",
+        "vertices" : [ {
+          "x" : 364,
+          "y" : 720
         } ]
       }, {
         "id" : "64",
         "vertices" : [ {
-          "x" : 990,
+          "x" : 989,
           "y" : 315
         } ]
       }, {
         "id" : "67",
         "vertices" : [ {
-          "x" : 985,
+          "x" : 984,
           "y" : 425
         } ]
       }, {
         "id" : "66",
         "vertices" : [ {
-          "x" : 1490,
+          "x" : 1489,
           "y" : 750
         } ]
       }, {
         "id" : "57",
         "vertices" : [ {
-          "x" : 1073,
+          "x" : 1072,
           "y" : 853
         } ]
       } ]
     } ],
     "containerViews" : [ {
+      "key" : "device_CONTAINERS",
+      "order" : 2,
+      "description" : "LoraWan Device",
+      "softwareSystemId" : "1",
+      "dimensions" : {
+        "width" : 2365,
+        "height" : 2345
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 835,
+        "y" : 786
+      }, {
+        "id" : "33",
+        "x" : 1570,
+        "y" : 214
+      }, {
+        "id" : "2",
+        "x" : 856,
+        "y" : 1664
+      }, {
+        "id" : "3",
+        "x" : 850,
+        "y" : 1275
+      }, {
+        "id" : "14",
+        "x" : 250,
+        "y" : 1696
+      }, {
+        "id" : "15",
+        "x" : 795,
+        "y" : 199
+      }, {
+        "id" : "49",
+        "x" : 1715,
+        "y" : 930
+      }, {
+        "id" : "5",
+        "x" : 220,
+        "y" : 1275
+      }, {
+        "id" : "8",
+        "x" : 220,
+        "y" : 786
+      } ],
+      "relationships" : [ {
+        "id" : "70",
+        "vertices" : [ {
+          "x" : 1090,
+          "y" : 649
+        } ]
+      }, {
+        "id" : "72"
+      }, {
+        "id" : "60"
+      }, {
+        "id" : "51",
+        "vertices" : [ {
+          "x" : 970,
+          "y" : 659
+        }, {
+          "x" : 1009,
+          "y" : 525
+        } ]
+      }, {
+        "id" : "62",
+        "vertices" : [ {
+          "x" : 1590,
+          "y" : 1345
+        } ]
+      }, {
+        "id" : "65",
+        "vertices" : [ {
+          "x" : 1950,
+          "y" : 730
+        } ]
+      }, {
+        "id" : "64",
+        "vertices" : [ {
+          "x" : 1400,
+          "y" : 234
+        } ]
+      }, {
+        "id" : "10",
+        "vertices" : [ {
+          "x" : 400,
+          "y" : 1191
+        } ]
+      }, {
+        "id" : "4"
+      }, {
+        "id" : "13",
+        "vertices" : [ {
+          "x" : 755,
+          "y" : 881
+        } ]
+      }, {
+        "id" : "12",
+        "vertices" : [ {
+          "x" : 740,
+          "y" : 1021
+        } ]
+      }, {
+        "id" : "6",
+        "vertices" : [ {
+          "x" : 770,
+          "y" : 1381
+        } ]
+      }, {
+        "id" : "7",
+        "vertices" : [ {
+          "x" : 750,
+          "y" : 1466
+        } ]
+      }, {
+        "id" : "67",
+        "vertices" : [ {
+          "x" : 1440,
+          "y" : 374
+        } ]
+      }, {
+        "id" : "55",
+        "vertices" : [ {
+          "x" : 1445,
+          "y" : 1045
+        }, {
+          "x" : 1610,
+          "y" : 640
+        } ]
+      }, {
+        "id" : "66",
+        "vertices" : [ {
+          "x" : 1760,
+          "y" : 725
+        } ]
+      }, {
+        "id" : "9",
+        "vertices" : [ {
+          "x" : 510,
+          "y" : 1181
+        } ]
+      } ]
+    }, {
       "key" : "networkserver_CONTAINERS",
       "order" : 4,
       "description" : "LoraWan Network Server",
@@ -837,105 +981,105 @@
       },
       "externalSoftwareSystemBoundariesVisible" : true,
       "elements" : [ {
-        "id" : "34",
-        "x" : 1825,
-        "y" : 230
+        "id" : "1",
+        "x" : 199,
+        "y" : 1084
       }, {
         "id" : "45",
-        "x" : 2545,
-        "y" : 220
+        "x" : 2544,
+        "y" : 219
       }, {
-        "id" : "1",
-        "x" : 200,
-        "y" : 1085
+        "id" : "34",
+        "x" : 1824,
+        "y" : 229
       }, {
         "id" : "35",
-        "x" : 970,
-        "y" : 225
+        "x" : 969,
+        "y" : 224
       }, {
         "id" : "47",
-        "x" : 955,
-        "y" : 1045
+        "x" : 969,
+        "y" : 1044
       }, {
         "id" : "15",
-        "x" : 230,
-        "y" : 240
+        "x" : 229,
+        "y" : 239
       }, {
         "id" : "38",
-        "x" : 1590,
-        "y" : 765
+        "x" : 1589,
+        "y" : 764
       }, {
         "id" : "40",
-        "x" : 945,
-        "y" : 645
+        "x" : 969,
+        "y" : 644
       }, {
         "id" : "43",
-        "x" : 2165,
-        "y" : 755
+        "x" : 2164,
+        "y" : 764
       } ],
       "relationships" : [ {
         "id" : "71",
         "vertices" : [ {
-          "x" : 540,
-          "y" : 835
+          "x" : 539,
+          "y" : 834
         } ]
       }, {
         "id" : "41",
         "vertices" : [ {
-          "x" : 1600,
-          "y" : 540
-        } ]
-      }, {
-        "id" : "42",
-        "vertices" : [ {
-          "x" : 1650,
-          "y" : 610
+          "x" : 1599,
+          "y" : 539
         } ]
       }, {
         "id" : "76",
         "vertices" : [ {
-          "x" : 930,
-          "y" : 265
+          "x" : 929,
+          "y" : 264
         } ]
       }, {
         "id" : "53",
         "vertices" : [ {
-          "x" : 365,
-          "y" : 805
+          "x" : 364,
+          "y" : 804
+        } ]
+      }, {
+        "id" : "42",
+        "vertices" : [ {
+          "x" : 1649,
+          "y" : 609
         } ]
       }, {
         "id" : "37",
         "vertices" : [ {
-          "x" : 1635,
-          "y" : 420
+          "x" : 1634,
+          "y" : 419
         } ]
       }, {
         "id" : "36",
         "vertices" : [ {
-          "x" : 1615,
-          "y" : 260
+          "x" : 1614,
+          "y" : 299
+        } ]
+      }, {
+        "id" : "78",
+        "vertices" : [ {
+          "x" : 914,
+          "y" : 479
         } ]
       }, {
         "id" : "44"
       }, {
-        "id" : "78",
-        "vertices" : [ {
-          "x" : 915,
-          "y" : 480
-        } ]
-      }, {
         "id" : "56",
         "vertices" : [ {
-          "x" : 860,
-          "y" : 905
+          "x" : 774,
+          "y" : 864
         } ]
       }, {
         "id" : "46"
       }, {
         "id" : "59",
         "vertices" : [ {
-          "x" : 890,
-          "y" : 1035
+          "x" : 749,
+          "y" : 1049
         } ]
       }, {
         "id" : "48"
@@ -948,82 +1092,82 @@
       "description" : "LoraWan Gateway",
       "softwareSystemId" : "15",
       "dimensions" : {
-        "width" : 2920,
-        "height" : 2712
+        "width" : 3056,
+        "height" : 2384
       },
       "externalSoftwareSystemBoundariesVisible" : true,
       "elements" : [ {
         "id" : "33",
         "x" : 2405,
-        "y" : 535
-      }, {
-        "id" : "23",
-        "x" : 219,
-        "y" : 588
+        "y" : 206
       }, {
         "id" : "1",
         "x" : 480,
-        "y" : 2123
+        "y" : 1794
+      }, {
+        "id" : "23",
+        "x" : 219,
+        "y" : 259
       }, {
         "id" : "26",
         "x" : 244,
-        "y" : 1053
+        "y" : 724
       }, {
         "id" : "16",
         "x" : 1540,
-        "y" : 578
+        "y" : 249
       }, {
         "id" : "17",
         "x" : 915,
-        "y" : 578
+        "y" : 249
       }, {
         "id" : "29",
         "x" : 259,
-        "y" : 1553
+        "y" : 1224
       }, {
         "id" : "19",
         "x" : 919,
-        "y" : 1068
-      }, {
-        "id" : "21",
-        "x" : 919,
-        "y" : 1528
+        "y" : 739
       }, {
         "id" : "32",
         "x" : 1544,
-        "y" : 1068
+        "y" : 739
+      }, {
+        "id" : "21",
+        "x" : 919,
+        "y" : 1199
       } ],
       "relationships" : [ {
         "id" : "61",
         "vertices" : [ {
           "x" : 2269,
-          "y" : 2355
+          "y" : 2026
         } ]
       }, {
         "id" : "52",
         "vertices" : [ {
           "x" : 679,
-          "y" : 1988
+          "y" : 1659
         } ]
       }, {
         "id" : "75",
         "vertices" : [ {
           "x" : 2204,
-          "y" : 856
+          "y" : 527
         } ]
-      }, {
-        "id" : "20"
       }, {
         "id" : "31",
         "vertices" : [ {
           "x" : 534,
-          "y" : 1453
+          "y" : 1124
         } ]
+      }, {
+        "id" : "20"
       }, {
         "id" : "30",
         "vertices" : [ {
           "x" : 424,
-          "y" : 1443
+          "y" : 1114
         } ]
       }, {
         "id" : "18"
@@ -1031,189 +1175,45 @@
         "id" : "28",
         "vertices" : [ {
           "x" : 504,
-          "y" : 978
+          "y" : 649
         } ]
       }, {
         "id" : "27",
         "vertices" : [ {
           "x" : 414,
-          "y" : 983
+          "y" : 654
         } ]
       }, {
         "id" : "25",
         "vertices" : [ {
           "x" : 770,
-          "y" : 660
+          "y" : 331
         } ]
       }, {
         "id" : "24",
         "vertices" : [ {
           "x" : 805,
-          "y" : 815
+          "y" : 486
         } ]
       }, {
         "id" : "22"
       }, {
-        "id" : "57",
-        "vertices" : [ {
-          "x" : 2109,
-          "y" : 2145
-        } ]
-      }, {
         "id" : "69",
         "vertices" : [ {
           "x" : 509,
-          "y" : 2018
+          "y" : 1689
+        } ]
+      }, {
+        "id" : "57",
+        "vertices" : [ {
+          "x" : 2109,
+          "y" : 1816
         } ]
       }, {
         "id" : "79",
         "vertices" : [ {
           "x" : 2190,
-          "y" : 556
-        } ]
-      } ]
-    }, {
-      "key" : "device_CONTAINERS",
-      "order" : 2,
-      "description" : "LoraWan Device",
-      "softwareSystemId" : "1",
-      "dimensions" : {
-        "width" : 2365,
-        "height" : 2332
-      },
-      "externalSoftwareSystemBoundariesVisible" : true,
-      "elements" : [ {
-        "id" : "11",
-        "x" : 834,
-        "y" : 787
-      }, {
-        "id" : "33",
-        "x" : 1569,
-        "y" : 215
-      }, {
-        "id" : "2",
-        "x" : 855,
-        "y" : 1665
-      }, {
-        "id" : "3",
-        "x" : 849,
-        "y" : 1276
-      }, {
-        "id" : "14",
-        "x" : 249,
-        "y" : 1697
-      }, {
-        "id" : "15",
-        "x" : 794,
-        "y" : 200
-      }, {
-        "id" : "49",
-        "x" : 1714,
-        "y" : 931
-      }, {
-        "id" : "5",
-        "x" : 219,
-        "y" : 1276
-      }, {
-        "id" : "8",
-        "x" : 219,
-        "y" : 787
-      } ],
-      "relationships" : [ {
-        "id" : "70",
-        "vertices" : [ {
-          "x" : 1089,
-          "y" : 650
-        } ]
-      }, {
-        "id" : "72"
-      }, {
-        "id" : "60"
-      }, {
-        "id" : "51",
-        "vertices" : [ {
-          "x" : 969,
-          "y" : 660
-        }, {
-          "x" : 1008,
-          "y" : 526
-        } ]
-      }, {
-        "id" : "62",
-        "vertices" : [ {
-          "x" : 1589,
-          "y" : 1346
-        } ]
-      }, {
-        "id" : "65",
-        "vertices" : [ {
-          "x" : 1949,
-          "y" : 731
-        } ]
-      }, {
-        "id" : "64",
-        "vertices" : [ {
-          "x" : 1399,
-          "y" : 235
-        } ]
-      }, {
-        "id" : "10",
-        "vertices" : [ {
-          "x" : 399,
-          "y" : 1192
-        } ]
-      }, {
-        "id" : "4"
-      }, {
-        "id" : "13",
-        "vertices" : [ {
-          "x" : 754,
-          "y" : 882
-        } ]
-      }, {
-        "id" : "12",
-        "vertices" : [ {
-          "x" : 739,
-          "y" : 1022
-        } ]
-      }, {
-        "id" : "6",
-        "vertices" : [ {
-          "x" : 769,
-          "y" : 1382
-        } ]
-      }, {
-        "id" : "7",
-        "vertices" : [ {
-          "x" : 749,
-          "y" : 1467
-        } ]
-      }, {
-        "id" : "67",
-        "vertices" : [ {
-          "x" : 1439,
-          "y" : 375
-        } ]
-      }, {
-        "id" : "55",
-        "vertices" : [ {
-          "x" : 1444,
-          "y" : 1046
-        }, {
-          "x" : 1609,
-          "y" : 641
-        } ]
-      }, {
-        "id" : "66",
-        "vertices" : [ {
-          "x" : 1759,
-          "y" : 726
-        } ]
-      }, {
-        "id" : "9",
-        "vertices" : [ {
-          "x" : 509,
-          "y" : 1182
+          "y" : 227
         } ]
       } ]
     } ],
