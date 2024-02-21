@@ -55,7 +55,7 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
 
         networkserver = softwareSystem "Network Server" "LoRaWAN NS" nstag {
             routing = container "Routing" "Traffic Router" "software" routertag 
-            pkt-bridge = container "Packet Bridge" "IP to RF" "daemon" pktbridgetag {
+            pkt-bridge = container "Packet Bridge" "Gateway Connector" "daemon" bridgetag {
                 this -> routing uplinks
                 routing -> this downlinks
             }
@@ -69,7 +69,7 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             join = container "Join" "LoRaWAN NS" "software" jointag {
                 routing -> this
             }
-            integrations = container "integrations" "LoRaWAN NS" "software" fwdtag {
+            integrations = container "integrations" "LoRaWAN NS" "software" nsfwdtag {
                 routing -> this
             }
             adr = container "ADR" "LoRaWAN NS" "software" adrtag {
@@ -81,17 +81,24 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
         applicationserver = softwareSystem "Application Server" "data/control" astag
         
         device.antenna -> gateway.antenna uplinks RF uplink
-        device.mcu -> networkserver.mac "LoRaWAN\nMAC" uplink logical
-        networkserver.mac -> device.mcu "LoRaWAN\nMAC" downlink logical
+        gateway.antenna -> device.antenna downlinks RF downlink
+        
+        gateway.backhaul -> networkserver.pkt-bridge uplinks ip-tunnel uplink
+        networkserver.pkt-bridge -> gateway.backhaul downlinks ip-tunnel downlink
+
+        device.mcu -> networkserver.mac "LoRaWAN\nMAC" control logical
+        networkserver.mac -> device.mcu "LoRaWAN\nMAC" control logical
+
         device.mcu -> applicationserver reports uplink logical
-        gateway -> networkserver uplinks pkt-fwd uplink
+
         networkserver -> applicationserver uplinks http uplink
         applicationserver -> networkserver downlink http downlink
-        networkserver -> gateway downlink pkt-fwd downlink
-        gateway.antenna -> device.antenna downlinks RF downlink
+
+        # gateway -> networkserver uplinks pkt-fwd uplink
+        # networkserver -> gateway downlink pkt-fwd downlink
+
         applicationserver -> device.mcu control downlink logical
-        gateway.backhaul -> networkserver.pkt-bridge encaps uplink tunnel
-        networkserver.pkt-bridge -> gateway.backhaul encaps downlink tunnel
+        
     }
 
     views {
@@ -110,6 +117,7 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
 
         container networkserver networkserver_CONTAINERS "LoraWan Network Server" {
             include *
+            include applicationserver
         }
 
         styles {
@@ -140,7 +148,7 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
                 color black
                 fontSize 24
                 shape Pipe
-                # icon docs/images/tower.png
+                icon docs/icons/tower_icon.png
             }
             element nstag {
                 // wisteria
@@ -148,6 +156,23 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
                 color #ffffff
                 fontSize 24
                 shape Cylinder
+            }
+            element bridgetag {
+                background #BDB5D5
+                color black
+                icon docs/icons/bridge_icon.png
+            }
+            element jointag {
+                # background #BDB5D5
+                # color #ffffff
+                # icon docs/icons/bridge.png
+                shape Cylinder
+            }
+            element routertag {
+                background aqua
+                # color #ffffff
+                icon docs/icons/router_icon.png
+                # shape Cylinder
             }
             element astag {
                 background darkolivegreen
