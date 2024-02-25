@@ -80,10 +80,11 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
 
         applicationserver = softwareSystem "Application Server" "data/control" astag {
             provision = container "Provision" "Fleet Manager" "software" provisiontag {
-                this -> networkserver.join
+                this -> networkserver.join provision
             }
             decrypt = container "Decrypt" "Decryption" "software" decrypttag {
                 networkserver.join -> this appSkey
+                networkserver.integrations -> this payload
             }
             decode = container "Decode" "Playload Decoding" ""
         }
@@ -144,7 +145,7 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
                 background green
                 color white
                 fontSize 24
-                shape Hexagon
+                shape Component
             }
             element gwtag {
                 // periwinkle
@@ -167,22 +168,33 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
                 icon docs/icons/bridge_icon.png
             }
             element jointag {
-                # background #BDB5D5
+                background  #77DD77
                 # color #ffffff
-                # icon docs/icons/bridge.png
+                icon docs/icons/lock_icon.png
                 shape Cylinder
             }
             element nsmactag {
+                background   #ff694f 
                 icon docs/icons/accesscontrol_icon.png
             }
             element adrtag {
+                background  #FEBE10
                 icon docs/icons/lever_icon.png
             }
+            element deduptag {
+                background  #aa9499 
+                icon docs/icons/deduplication_icon.png
+            }
             element routertag {
-                background aqua
+                background  #89cff0
                 # color #ffffff
                 icon docs/icons/router_icon.png
                 # shape Cylinder
+            }
+            element nsfwdtag {
+                background #7CB9E8
+                icon docs/icons/connector_icon.png
+                shape Pipe
             }
             element astag {
                 background darkolivegreen
