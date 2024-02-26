@@ -48,8 +48,9 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             antenna = container "Antenna" "" "hardware" antennatag {
                 radio -> this out
                 this -> radio in
+                device.antenna -> this uplinks RF uplink
+                this -> device.antenna downlinks RF downlink
             }
-
             power = container "power" "gateway power" "hardware" powertag
         }
 
@@ -58,6 +59,8 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             pkt-bridge = container "Packet Bridge" "Gateway Connector" "daemon" bridgetag {
                 this -> routing uplinks
                 routing -> this downlinks
+                gateway.backhaul -> this uplinks ip-tunnel uplink
+                this -> gateway.backhaul downlinks ip-tunnel downlink
             }
             dedup = container "DeDup" "LoRaWAN NS" "software" deduptag {
                 routing -> this
@@ -65,6 +68,8 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             mac = container "MAC" "Media Access Control" "software" nsmactag {
                 routing -> this
                 this -> routing
+                device.mcu -> this MAC control mac
+                this -> device.mcu MAC control mac
             }
             join = container "Join" "LoRaWAN NS" "software" jointag {
                 routing -> this
@@ -75,77 +80,83 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             adr = container "ADR" "LoRaWAN NS" "software" adrtag {
                 this -> mac
             }
-
         }
 
         applicationserver = softwareSystem "Application Server" "data/control" astag {
+            encrypt = container "Encrypt/Decrypt" "encrypt/decrypt" encryption encrypttag {
+                device.mcu -> this reports uplink logical
+                this -> device.mcu control downlink logical
+                networkserver.integrations -> this uplinks HTTP uplink
+                this -> networkserver.integrations downlinks HTTP downlink
+            }
+            decode = container "Decode" "Playload Decoding" decoder decodetag {
+                encrypt -> this Payload
+            }
             provision = container "Provision" "Fleet Manager" "software" provisiontag {
                 this -> networkserver.join provision
+                networkserver.join -> this appSkey joined
+                this -> encrypt appSkey
             }
-            decrypt = container "Decrypt" "Decryption" "software" decrypttag {
-                networkserver.join -> this appSkey
-                networkserver.integrations -> this payload
-            }
-            decode = container "Decode" "Playload Decoding" ""
         }
-        
-        device.antenna -> gateway.antenna uplinks RF uplink
-        gateway.antenna -> device.antenna downlinks RF downlink
-        
-        gateway.backhaul -> networkserver.pkt-bridge uplinks ip-tunnel uplink
-        networkserver.pkt-bridge -> gateway.backhaul downlinks ip-tunnel downlink
 
-        device.mcu -> networkserver.mac "LoRaWAN\nMAC" control logical
-        networkserver.mac -> device.mcu "LoRaWAN\nMAC" control logical
+        storageserver = softwareSystem "Storage Server" store storagetag
 
-        networkserver -> applicationserver uplinks http uplink
-        applicationserver -> networkserver downlink http downlink
-
-        device.mcu -> applicationserver reports uplink logical
-        applicationserver -> device.mcu control downlink logical
-        
     }
 
     views {
-    
-        systemContext device LoRaWAN "LoraWan Packet Flow" {
+
+        systemContext device device_system "LoraWan Packet Flow" {
             include *
         }
-        
+        systemContext applicationserver LoRaWAN2 "LoraWan Packet Flow - AS" {
+            include *
+            include gateway
+            include storageserver
+        }
         container device device_CONTAINERS "LoraWan Device" {
             include *
         }
         
         container gateway gateway_CONTAINERS "LoraWan Gateway" {
             include *
+            include applicationserver
         }
 
         container networkserver networkserver_CONTAINERS "LoraWan Network Server" {
             include *
-            # include applicationserver
+            # include applicationserver.encrypt
+        }
+        container applicationserver applicationserver_CONTAINERS "LoraWan Application Server" {
+            include *
+            include gateway
         }
 
         styles {
             relationship uplink {
-                color LimeGreen
+                color DarkGreen
                 dashed false
                 thickness 4
             }
             relationship downlink {
-                color red
+                color Blue
                 dashed false
                 thickness 4
             }
             relationship logical {  
-                color blue
+                color DarkOliveGreen
+                dashed true
+                thickness 4
+            }
+            relationship mac {  
+                color orange
                 dashed true
                 thickness 4
             }
             element devtag {
-                background green
-                color white
-                fontSize 24
-                shape Component
+                background #35D85D
+                shape roundedbox
+                icon docs/icons/therm_icon.png
+                strokewidth 5
             }
             element gwtag {
                 // periwinkle
@@ -158,31 +169,50 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             element nstag {
                 // wisteria
                 background #BDB5D5
-                color #ffffff
+                color black
                 fontSize 24
                 shape Cylinder
+                icon docs/icons/service_icon.png
             }
             element bridgetag {
                 background #BDB5D5
-                color black
+                shape pipe
                 icon docs/icons/bridge_icon.png
             }
             element jointag {
-                background  #77DD77
+                background  #F4EB30
                 # color #ffffff
                 icon docs/icons/lock_icon.png
                 shape Cylinder
             }
+            element provisiontag {
+                background #FDDA0D
+                icon docs/icons/tickets_icon.png
+            }
+            element encrypttag {
+                background #FAA0A0
+                icon docs/icons/lockandkey_icon.png
+            }
+            element decodetag {
+                background #AFE1AF
+                icon docs/icons/structure_icon.png
+            }
             element nsmactag {
-                background   #ff694f 
+                background   #ff694f
+                shape ellipse
                 icon docs/icons/accesscontrol_icon.png
             }
             element adrtag {
                 background  #FEBE10
+                shape circle
+                height 300
+                width 300
                 icon docs/icons/lever_icon.png
             }
             element deduptag {
-                background  #aa9499 
+                background  #aa9499
+                color white
+                shape ellipse
                 icon docs/icons/deduplication_icon.png
             }
             element routertag {
@@ -197,67 +227,74 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
                 shape Pipe
             }
             element astag {
-                background darkolivegreen
-                color white
+                background #AFE1AF
+                # color black
                 fontSize 24
                 shape RoundedBox
+                icon docs/icons/pipes2_icon.png
             }
             element sensorstag {
                 background green
                 color white
                 fontSize 24
                 shape Hexagon
-                # icon docs/images/therm100.jpg
+                icon docs/icons/therm100.jpg
             }
             element antennatag {
                 background #DA70D6
                 color black
                 shape Component
-                # icon docs/images/antenna.png
+                icon docs/icons/omni_icon.png
             }
             element radiotag {
                 background violet
                 color black
                 shape Component
-                # icon docs/images/antenna.png
+                icon docs/icons/radio_icon.png
             }
             element modemtag {
                 background  #E0B0FF
                 color black
                 shape Component
-                # icon docs/images/antenna.png
+                icon docs/icons/shuttlebus_icon.png
             }
-            element cputag {
+            element mcutag {
                 background LightGreen
                 color black
                 shape Component
-                # icon docs/images/antenna.png
+                icon docs/icons/cpu_icon.png
+            }
+            element cputag {
+                background LightGreen
+                shape Component
+                icon docs/icons/cpu_icon.png
             }
             element powertag {
-                background IndianRed
-                color white
-                shape Component
-                # icon docs/images/antenna.png
+                background #FAA0A0
+                shape component
+                icon docs/icons/power_icon.png
             }
             element gpstag {
-                background SkyBlue
-                color black
-                shape Component
-                # icon docs/images/antenna.png
+                background skyblue
+                shape roundedbox
+                icon docs/icons/gps_icon.png
             }
             element pktfwdtag {
-                # background #DF73FF
-                color white
-                shape Component
-                # icon docs/images/antenna.png
+                background #A7C7E7
+                # color white
+                shape Pipe
+                icon docs/icons/forward_icon.png
             }
             element backhaultag {
-                # background #4E2A84
-                color white
-                shape Component
-                # icon docs/images/antenna.png
+                background lightblue
+                # color white
+                shape Pipe
+                icon docs/icons/globe_icon.png
             }
         }
     }
+    # shape <Box|RoundedBox|Circle|Ellipse|Hexagon|Cylinder|Pipe|Person|Robot|Folder|
+    #       WebBrowser|MobileDevicePortrait|MobileDeviceLandscape|Component>
+
 
 }
