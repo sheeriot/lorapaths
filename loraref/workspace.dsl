@@ -72,7 +72,9 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
                 this -> device.mcu MAC control mac
             }
             join = container "Join" "LoRaWAN NS" "software" jointag {
-                routing -> this
+                routing -> this request
+                this -> routing accept
+                this -> mac nwkSkey
             }
             integrations = container "Integrations" "LoRaWAN NS" "software" nsfwdtag {
                 routing -> this
@@ -99,7 +101,9 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             }
         }
 
-        storageserver = softwareSystem "Storage Server" store storagetag
+        storageserver = softwareSystem "Storage Server" store storagetag {
+            applicationserver.decode -> this store
+        }
 
     }
 
@@ -182,8 +186,11 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             element jointag {
                 background  #F4EB30
                 # color #ffffff
-                icon docs/icons/lock_icon.png
                 shape Cylinder
+                height 250
+                width 250
+                icon docs/icons/lock_icon.png
+
             }
             element provisiontag {
                 background #FDDA0D
@@ -200,19 +207,23 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
             element nsmactag {
                 background   #ff694f
                 shape ellipse
+                height 250
+                width 350
                 icon docs/icons/accesscontrol_icon.png
             }
             element adrtag {
                 background  #FEBE10
                 shape circle
-                height 300
-                width 300
+                height 250
+                width 250
                 icon docs/icons/lever_icon.png
             }
             element deduptag {
                 background  #aa9499
                 color white
                 shape ellipse
+                height 250
+                width 350
                 icon docs/icons/deduplication_icon.png
             }
             element routertag {
@@ -290,6 +301,11 @@ workspace "LoRaWAN Primer" "Quick-Start and Shared Reference Content for LoRaWAN
                 # color white
                 shape Pipe
                 icon docs/icons/globe_icon.png
+            }
+            element storagetag {
+                background lightgreen
+                shape cylinder
+                icon docs/icons/bucket2_icon.png
             }
         }
     }
