@@ -1,2 +1,3 @@
 .structurizr/
 *.env
+.DS_Store
